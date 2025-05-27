@@ -4,36 +4,35 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Main {
+
+    static String[] characters = { "MARK", "EDUARDO", "CHRIS", "DUSTIN", "SEAN", "JENNY", "ALICE", "DIVYA", "TYLER",
+                    "CAMERON", "SY", "GRETCHEN", "ERICA", "MARYLIN", "LARRY", "AMY", "PRINCE ALBERT"};
+
     public static void main(String[] args) throws IOException {
         String scriptPath = "C:\\Users\\megha\\zucktest\\socialnetwork.txt";
         File file = new File(scriptPath);
         try (Scanner davidfinch = new Scanner(file);
                 FileWriter sorkin = new FileWriter("C:\\Users\\megha\\zucktest\\dialogue.txt", true)) {
 
-            String[] characters = { "MARK", "EDUARDO", "CHRIS", "DUSTIN", "SEAN", "JENNY", "ALICE", "DIVYA", "TYLER",
-                    "CAMERON", "SY", "GRETCHEN", "ERICA", "MARYLIN", "LARRY" };
-
             while (davidfinch.hasNextLine()) {
-                String line = davidfinch.nextLine();
-                String nextLine = davidfinch.nextLine();
+                String line = davidfinch.nextLine().trim();
+
                 for (String character : characters) {
-                    // if the line has only MARK and the next line has (beat) then save the next
-                    // next line
-                    if (line.trim().equals(character) && nextLine.contains("(")) {
-                        String nextNextLine = davidfinch.nextLine();
-                        System.out.print("1 " + nextNextLine);
-                        sorkin.write(checkCompleteSentence(nextNextLine, sorkin, davidfinch) + "\n");
+                    // if the line has only MARK, or has MARK (V.O.), then save the next line
+                    if ((line.equals(character + " (V.O.)")) || (line.equals(character + " (CONT'D)")) || (line.equals(character))) {
 
-                        // if the line has MARK (V.O.) save the next line
-                    } else if (line.trim().equals(character + " (V.O.)")) {
-                        System.out.print("2 " + nextLine);
-                        sorkin.write(checkCompleteSentence(nextLine, sorkin, davidfinch) + "\n");
+                        if (!davidfinch.hasNextLine()) break;
+                        String dialogue = davidfinch.nextLine().trim();
 
-                        // if the line has MARK and the next line doesn't have (beat), save the next
-                        // line
-                    } else if (line.trim().equals(character) && !(nextLine.contains("("))) {
-                        System.out.print("3 " + nextLine);
-                        sorkin.write(checkCompleteSentence(nextLine, sorkin, davidfinch) + "\n");
+                        // if the line after it has (beat) or something then save the nextnextline
+                        if(dialogue.startsWith("(")) {
+                            if (!davidfinch.hasNextLine()) break;
+                            dialogue = davidfinch.nextLine().trim();
+                        }
+
+                        String block = checkCompleteSentence(dialogue, sorkin, davidfinch);
+                        sorkin.write(block + "\n");
+
                     }
                 }
             }
@@ -46,14 +45,17 @@ public class Main {
     public static String checkCompleteSentence(String startLine, FileWriter sorkin, Scanner davidfinch)
             throws IOException {
         StringBuilder fullBlock = new StringBuilder();
-        fullBlock.append(startLine);
+        fullBlock.append(startLine.trim());
 
-        while (!startLine.trim().matches(".*[.?!:]$")) {
-            if (!davidfinch.hasNextLine()) {
-                break; 
+        while (davidfinch.hasNextLine()) {
+            String nextLine = davidfinch.nextLine().trim();
+
+            for (String character : characters) {
+            if (nextLine.equals(character) || nextLine.equals(character + " (V.O.)")) {
+                return fullBlock.toString().trim();
             }
-            String line = davidfinch.nextLine();
-            fullBlock.append(line);
+        }
+            fullBlock.append(" ").append(nextLine);
         }
         return fullBlock.toString().trim();
     }
