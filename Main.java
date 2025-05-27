@@ -8,7 +8,7 @@ public class Main {
         String scriptPath = "C:\\Users\\megha\\zucktest\\socialnetwork.txt";
         File file = new File(scriptPath);
         try (Scanner davidfinch = new Scanner(file);
-            FileWriter sorkin = new FileWriter("C:\\Users\\megha\\zucktest\\dialogue.txt", true)) {
+                FileWriter sorkin = new FileWriter("C:\\Users\\megha\\zucktest\\dialogue.txt", true)) {
 
             String[] characters = { "MARK", "EDUARDO", "CHRIS", "DUSTIN", "SEAN", "JENNY", "ALICE", "DIVYA", "TYLER",
                     "CAMERON", "SY", "GRETCHEN", "ERICA", "MARYLIN", "LARRY" };
@@ -17,22 +17,23 @@ public class Main {
                 String line = davidfinch.nextLine();
                 String nextLine = davidfinch.nextLine();
                 for (String character : characters) {
-                    
-                    // if the line has only MARK and the next line has (beat) then save the next next line
-                    if (line.trim().equals(character) && nextLine.contains("(")) {  
+                    // if the line has only MARK and the next line has (beat) then save the next
+                    // next line
+                    if (line.trim().equals(character) && nextLine.contains("(")) {
                         String nextNextLine = davidfinch.nextLine();
-                        sorkin.write(nextNextLine);
-                        while(checkCompleteSentence(davidfinch.nextLine(), sorkin, davidfinch) != null) {
-                           // what is going on  
-                        } 
+                        System.out.print("1 " + nextNextLine);
+                        sorkin.write(checkCompleteSentence(nextNextLine, sorkin, davidfinch) + "\n");
 
-                    // if the line has MARK (V.O.) save the next line
+                        // if the line has MARK (V.O.) save the next line
                     } else if (line.trim().equals(character + " (V.O.)")) {
-                        sorkin.write(nextLine + "\n");
+                        System.out.print("2 " + nextLine);
+                        sorkin.write(checkCompleteSentence(nextLine, sorkin, davidfinch) + "\n");
 
-                    // if the line has MARK and the next line doesn't have (beat), save the next line
+                        // if the line has MARK and the next line doesn't have (beat), save the next
+                        // line
                     } else if (line.trim().equals(character) && !(nextLine.contains("("))) {
-                        sorkin.write(nextLine + "\n");
+                        System.out.print("3 " + nextLine);
+                        sorkin.write(checkCompleteSentence(nextLine, sorkin, davidfinch) + "\n");
                     }
                 }
             }
@@ -42,18 +43,19 @@ public class Main {
     }
 
     // get the complete sentence/paragraph block the speaker is saying given the starting line of that block
-    public static String checkCompleteSentence(String startLine, FileWriter sorkin, Scanner davidfinch) throws IOException {
-        String out = null;
-        if (startLine.trim().matches(".*[.?!:]$")) { // this is so sick (baby's first regex code)
-            out = startLine;
-        } else {
-            sorkin.write(startLine);
-            String line = davidfinch.nextLine();
-            while(checkCompleteSentence(line, sorkin, davidfinch) != null) {
-                out = line;
+    public static String checkCompleteSentence(String startLine, FileWriter sorkin, Scanner davidfinch)
+            throws IOException {
+        StringBuilder fullBlock = new StringBuilder();
+        fullBlock.append(startLine);
+
+        while (!startLine.trim().matches(".*[.?!:]$")) {
+            if (!davidfinch.hasNextLine()) {
+                break; 
             }
+            String line = davidfinch.nextLine();
+            fullBlock.append(line);
         }
-        return out;
+        return fullBlock.toString().trim();
     }
 
 }
