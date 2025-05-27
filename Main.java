@@ -21,7 +21,10 @@ public class Main {
                     // if the line has only MARK and the next line has (beat) then save the next next line
                     if (line.trim().equals(character) && nextLine.contains("(")) {  
                         String nextNextLine = davidfinch.nextLine();
-                        sorkin.write(nextNextLine + "\n");
+                        sorkin.write(nextNextLine);
+                        while(checkCompleteSentence(davidfinch.nextLine(), sorkin, davidfinch) != null) {
+                           // what is going on  
+                        } 
 
                     // if the line has MARK (V.O.) save the next line
                     } else if (line.trim().equals(character + " (V.O.)")) {
@@ -39,12 +42,18 @@ public class Main {
     }
 
     // get the complete sentence/paragraph block the speaker is saying given the starting line of that block
-    public void getCompleteSentence(String startLine, FileWriter sorkin) throws IOException {
-        if (startLine.trim().matches(".*[.?!]$")) { //this is so sick (baby's first regex code)
-            sorkin.write(startLine);
+    public static String checkCompleteSentence(String startLine, FileWriter sorkin, Scanner davidfinch) throws IOException {
+        String out = null;
+        if (startLine.trim().matches(".*[.?!:]$")) { // this is so sick (baby's first regex code)
+            out = startLine;
         } else {
-            //I need to figure this out
+            sorkin.write(startLine);
+            String line = davidfinch.nextLine();
+            while(checkCompleteSentence(line, sorkin, davidfinch) != null) {
+                out = line;
+            }
         }
+        return out;
     }
 
 }
