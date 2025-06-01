@@ -6,7 +6,7 @@ The social network is one of my favorite movies of all time, and when I first wa
 
 ## Methodology
 You may be going through my .java files going "Meghana, why did you make both isolateDialogue and editRawScript and also that strange removeShort() method" and "wow it looks like you've never made a website before" and "did you really need seven hours for this". And to that I say          
-1) I wanted each set of changing the script to be different for debugging and better organization in my head and also I don't like having a ton of FileWriters and also I'm lazy.           
+1) I wanted each set of changing the script to be different for debugging and also I don't like having a ton of FileWriters and also I'm lazy.           
 2) This is the first time I'm making a website that uses both java as backend and js and frontend. Usually all my websites are just pure html static stuff.       
 3) I've made some mistakes.        
 
