@@ -3,7 +3,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class isolate {
+public class isolateDialogue {
 
     static String[] characters = { "MARK", "EDUARDO", "CHRIS", "DUSTIN", "SEAN", "JENNY", "ALICE", "CHRISTY", "DIVYA",
             "TYLER",
@@ -14,7 +14,7 @@ public class isolate {
         String dialoguePath = "C:\\Users\\megha\\zucktest\\dialogue.txt";
         File file = new File(scriptPath);
         try (Scanner davidfinch = new Scanner(file);
-            FileWriter sorkin = new FileWriter(dialoguePath, true)) {
+                FileWriter sorkin = new FileWriter(dialoguePath, true)) {
 
             while (davidfinch.hasNextLine()) {
                 String line = davidfinch.nextLine().trim();
@@ -38,12 +38,15 @@ public class isolate {
                         String block = checkCompleteSentence(dialogue, sorkin, davidfinch);
                         sorkin.write(block + "\n");
 
-                    }
+                    } //else if (line.matches("^[A-Z ]+$")) {
+                    //     String dialogue = davidfinch.nextLine();
+                    //     sorkin.write(dialogue + "\n");
+                    // }
                 }
+
             }
 
         }
-
     }
 
     // get the complete sentence/paragraph block the speaker is saying given the
@@ -57,8 +60,9 @@ public class isolate {
             String nextLine = davidfinch.nextLine().trim();
 
             for (String character : characters) {
-                // this stops it if the line is MARK or if it's INT. HARVARD SQUARE - DAY
-                if (nextLine.contains(character) || nextLine.matches("[A-Z.]+")) {
+                // this stops it if the line is MARK or if it's INT. HARVARD SQUARE - DAY or if
+                // it's CLUB GUY
+                if (nextLine.contains(character) || nextLine.matches("[A-Z.]+") || nextLine.matches("^[A-Z]+$")) {
                     return fullBlock.toString().trim();
                 }
             }
