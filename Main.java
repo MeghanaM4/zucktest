@@ -1,3 +1,11 @@
+//things to add:
+//fix ?s with splitting
+//split up long monologues (>2 sentences) (looking at you justin timberlake)
+//if the firstHalf has <3 words then add a word from the second half to the first
+//you get points for how many letters you match with SecondHalf
+//hard mode includes punctuation
+//remove lines from irrelevant characters (?)
+
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -92,7 +100,7 @@ public class Main {
             while (bloo.hasNextLine()) {
                 String line = bloo.nextLine().trim();
 
-                if ((countSpaces(line) > 5)) {
+                if ((countSpaces(line) > 3)) {
                     cloo.write(line + "\n");
                 }
             }
