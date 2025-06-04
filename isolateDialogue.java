@@ -1,75 +1,86 @@
 // a script to isolate all the dialogue of the social network
 
 import java.io.*;
-import java.util.Scanner;
 
 public class isolateDialogue {
 
     static String[] characters = { "MARK", "EDUARDO", "CHRIS", "DUSTIN", "SEAN", "JENNY", "ALICE", "CHRISTY", "DIVYA",
-            "TYLER",
-            "CAMERON", "SY", "GRETCHEN", "ERICA", "MARYLIN", "LARRY", "AMY", "PRINCE ALBERT", "GAGE" };
+            "TYLER", "CAMERON", "SY", "GRETCHEN", "ERICA", "MARYLIN", "LARRY", "AMY", "PRINCE ALBERT", "GAGE",
+            "SUMMERS" };
 
     public static void main(String[] args) throws IOException {
         String scriptPath = "C:\\Users\\megha\\zucktest\\socialnetwork.txt";
         String dialoguePath = "C:\\Users\\megha\\zucktest\\dialogue.txt";
-        File file = new File(scriptPath);
-        try (Scanner davidfinch = new Scanner(file);
-                FileWriter sorkin = new FileWriter(dialoguePath, true)) {
 
-            while (davidfinch.hasNextLine()) {
-                String line = davidfinch.nextLine().trim();
+        BufferedWriter sorkin;
+        try (BufferedReader davidfinch = new BufferedReader(new FileReader(scriptPath))) {
+            sorkin = new BufferedWriter(new FileWriter(dialoguePath, false));
+            String line;
+
+            while ((line = davidfinch.readLine()) != null) {
+                line = line.trim();
 
                 for (String character : characters) {
-                    // if the line has only MARK, or has MARK (V.O.), then save the next line
-                    if ((line.equals(character + " (V.O.)")) || (line.equals(character + " (CONT'D)"))
-                            || (line.equals(character))) {
+                    if (line.equals(character) || line.equals(character + " (V.O.)")
+                            || line.equals(character + " (CONT'D)")) {
 
-                        if (!davidfinch.hasNextLine())
+                        davidfinch.mark(10000); // mark current position
+                        String next = davidfinch.readLine();
+
+                        if (next == null)
                             break;
-                        String dialogue = davidfinch.nextLine().trim();
+                        next = next.trim();
 
-                        // if the line after it has (beat) or something then save the nextnextline
-                        if (dialogue.startsWith("(")) {
-                            if (!davidfinch.hasNextLine())
+                        if (next.startsWith("(")) {
+                            next = davidfinch.readLine();
+                            if (next == null)
                                 break;
-                            dialogue = davidfinch.nextLine().trim();
+                            next = next.trim();
                         }
 
-                        String block = checkCompleteSentence(dialogue, sorkin, davidfinch);
-                        sorkin.write(block + "\n");
-
-                    } //else if (line.matches("^[A-Z ]+$")) {
-                    //     String dialogue = davidfinch.nextLine();
-                    //     sorkin.write(dialogue + "\n");
-                    // }
+                        // if the next line isn't SEAN or INT. HARVARD SQUARE
+                        if (!next.matches(".*\\b[A-Z\\-]{2,}\\b.*")) {
+                            String full = checkCompleteSentence(next, davidfinch);
+                            sorkin.write(full + "\n");
+                        }
+                    }
                 }
-
             }
-
         }
+        sorkin.close();
+
     }
 
     // get the complete sentence/paragraph block the speaker is saying given the
     // starting line of that block
-    public static String checkCompleteSentence(String startLine, FileWriter sorkin, Scanner davidfinch)
+    public static String checkCompleteSentence(String startLine, BufferedReader davidfinch)
             throws IOException {
         StringBuilder fullBlock = new StringBuilder();
         fullBlock.append(startLine.trim());
 
-        while (davidfinch.hasNextLine()) {
-            String nextLine = davidfinch.nextLine().trim();
+        String nextLine;
+        while ((nextLine = davidfinch.readLine()) != null) {
+            nextLine = nextLine.trim();
 
             for (String character : characters) {
-                // this stops it if the line is MARK or if it's INT. HARVARD SQUARE - DAY or if
-                // it's CLUB GUY
-                if (nextLine.contains(character) || nextLine.matches("[A-Z.]+") || nextLine.matches("^[A-Z]+$")) {
+                if ((nextLine.equals(character) || nextLine.equals(character + " (V.O.)")
+                        || nextLine.equals(character + " (CONT'D)") || nextLine.contains(character))) {
+                    davidfinch.reset();
                     return fullBlock.toString().trim();
                 }
+            }
+
+            // went from {2,} to {3,} to {4,} to {5,} because IQ's, SAT's, and WGET were
+            // all deleted by accident lmao
+            if (nextLine.matches(".*\\b[A-Z\\-]{5,}\\b.*")) {
+                davidfinch.reset();
+                return fullBlock.toString().trim();
             }
 
             fullBlock.append(" ").append(nextLine);
         }
         return fullBlock.toString().trim();
+
     }
 
 }
