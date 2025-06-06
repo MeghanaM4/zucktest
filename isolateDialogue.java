@@ -1,16 +1,20 @@
 // a script to isolate all the dialogue of the social network
 
 import java.io.*;
+import java.util.Scanner;
 
 public class isolateDialogue {
+
+    public static String linesPath = "C:\\Users\\megha\\zucktest\\lines.txt";
+    public static String scriptPath = "C:\\Users\\megha\\zucktest\\socialnetwork.txt";
+    public static String dialoguePath = "C:\\Users\\megha\\zucktest\\dialogue.txt";
 
     static String[] characters = { "MARK", "EDUARDO", "CHRIS", "DUSTIN", "SEAN", "JENNY", "ALICE", "CHRISTY", "DIVYA",
             "TYLER", "CAMERON", "SY", "GRETCHEN", "ERICA", "MARYLIN", "LARRY", "AMY", "PRINCE ALBERT", "GAGE",
             "SUMMERS" };
 
     public static void main(String[] args) throws IOException {
-        String scriptPath = "C:\\Users\\megha\\zucktest\\socialnetwork.txt";
-        String dialoguePath = "C:\\Users\\megha\\zucktest\\dialogue.txt";
+        File dialogueFile = new File(dialoguePath);
 
         BufferedWriter sorkin;
         try (BufferedReader davidfinch = new BufferedReader(new FileReader(scriptPath))) {
@@ -49,6 +53,20 @@ public class isolateDialogue {
         }
         sorkin.close();
 
+        //remove short pieces of dialogue
+        FileWriter cloo;
+        try (Scanner bloo = new Scanner(dialogueFile)) {
+            cloo = new FileWriter(linesPath, true);
+            while (bloo.hasNextLine()) {
+                String line = bloo.nextLine().trim();
+
+                if ((countSpaces(line) > 4)) {
+                    cloo.write(line + "\n");
+                }
+            }
+        }
+        cloo.close();
+
     }
 
     // get the complete sentence/paragraph block the speaker is saying given the
@@ -81,6 +99,16 @@ public class isolateDialogue {
         }
         return fullBlock.toString().trim();
 
+    }
+
+    public static int countSpaces(String line) {
+        int count = 0;
+        for (int i = 0; i < line.length(); i++) {
+            if (line.charAt(i) == ' ') {
+                count++;
+            }
+        }
+        return count;
     }
 
 }
