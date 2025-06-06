@@ -22,8 +22,8 @@ public class editRawScript {
                 if ((countChar(line, ' ') > 10) && countChar(line, '.') > 2) {
                     for (int i = 0; i < line.length(); i++) {
                         if (line.charAt(i) == '.') {
-                            String sentence = null;
-                            for (int j = 0; j < i + 1; j++) {
+                            String sentence = "";
+                            for (int j = 0; j < i; j++) {
                                 sentence += line.charAt(j);
                                 sorkin.write(sentence + "\n");
                             }
