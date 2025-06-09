@@ -189,7 +189,7 @@
     <script>
         let currentAnswer = '';
         let totalScore = 0;
-        const API_BASE = 'https://your-render-app-name.onrender.com';
+        const API_BASE = 'https://zucktest.onrender.com/';
         
         // DOM elements
         const quoteDisplay = document.getElementById('quote-display');
@@ -226,7 +226,7 @@
                     showError('Failed to load quote: ' + data.error);
                 }
             } catch (error) {
-                showError('Connection error. Make sure your Java server is running on port 8080.');
+                showError('connection error. make sure server is right.');
             } finally {
                 setLoading(false);
             }

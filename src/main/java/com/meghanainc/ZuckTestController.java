@@ -1,22 +1,21 @@
 package com.meghanainc;
 
 //things to add:
-//fix stupid scanner problem
+//fix html
 //fix ?s with em dashes
 //split up long monologues (>2 sentences) (looking at you justin timberlake)
-//you get points for how many letters you match with SecondHalf
 //hard mode includes punctuation
 //remove lines from irrelevant characters (?)
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -31,8 +30,6 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*")
 
 public class ZuckTestController {
-    public static File dialogueFile = new File("src\\main\\resources\\dialogue.txt");
-    public static final String linesPath = "src\\main\\resources\\lines.txt";
 
     @GetMapping("/newquote")
     public Map<String, Object> getNewQuote() {
@@ -104,24 +101,23 @@ public class ZuckTestController {
     }
 
     public static String randomLine() throws IOException {
-        try (BufferedReader reader = new BufferedReader(new FileReader(linesPath))) {
-            long numLines = Files.lines(Paths.get(linesPath)).count();
-            int rand = (int) Math.floor(Math.random() * (numLines - 1));
-            int currentLineNum = 1;
-            String line;
-
-            // is this the most efficient way to do this? I have no idea. Also I need to
-            // decide between BufferedReader and FileReader and Scanner
-            while ((line = reader.readLine().trim()) != null) {
-                if (currentLineNum == rand) {
-                    return line;
-                }
-                currentLineNum++;
-            }
+    try (InputStream inputStream = ZuckTestController.class.getClassLoader().getResourceAsStream("lines.txt");
+         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+        
+        List<String> lines = new ArrayList<>();
+        String line;
+        while ((line = reader.readLine()) != null) {
+            lines.add(line.trim());
         }
-        return null;
-
+        
+        if (lines.isEmpty()) {
+            return null;
+        }
+        
+        int rand = (int) Math.floor(Math.random() * lines.size());
+        return lines.get(rand);
     }
+}
 
     public static int countSpaces(String line) {
         int count = 0;
