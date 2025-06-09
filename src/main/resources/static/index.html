@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zuck test by meghana</title>
+
+    <meta name="title" content="zuck test" />
+    <meta name="description" content="how well do you know The Social Network?" />
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .game-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .quote-display {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 1.4em;
+            line-height: 1.6;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            border-left: 5px solid #FFD700;
+        }
+        
+        .input-section {
+            margin: 25px 0;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            box-sizing: border-box;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        button {
+            flex: 1;
+            padding: 15px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+        }
+        
+        .new-quote-btn {
+            background: linear-gradient(45deg, #007bff, #6c5ce7);
+            color: white;
+        }
+        
+        .new-quote-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+        }
+        
+        .skip-btn {
+            background: linear-gradient(45deg, #ffc107, #ff8c00);
+            color: white;
+        }
+        
+        .skip-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+        }
+        
+        .result {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.1em;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .correct {
+            background: rgba(40, 167, 69, 0.3);
+            border-left: 5px solid #28a745;
+        }
+        
+        .incorrect {
+            background: rgba(220, 53, 69, 0.3);
+            border-left: 5px solid #dc3545;
+        }
+        
+        .score {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 215, 0, 0.2);
+            border-radius: 10px;
+            border: 2px solid #FFD700;
+        }
+        
+        .loading {
+            text-align: center;
+            font-style: italic;
+            opacity: 0.8;
+        }
+        
+        .error {
+            background: rgba(220, 53, 69, 0.3);
+            border-left: 5px solid #dc3545;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>zuck test</h1>
+        
+        <div class="score">
+            score: <span id="score">0</span>
+        </div>
+        
+        <div id="quote-display" class="quote-display">
+            <div class="loading"> give me a sec...</div>
+        </div>
+        
+        <div class="input-section">
+            <input type="text" id="user-input" placeholder="alright now finish it" disabled autocomplete="off">
+        </div>
+        
+        <div class="button-group">
+            <button id="submit-btn" class="submit-btn" disabled>submit</button>
+            <button id="skip-btn" class="skip-btn" disabled>skip & show answer</button>
+            <button id="new-quote-btn" class="new-quote-btn">new quote</button>
+        </div>
+        
+        <div id="result" class="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        let currentAnswer = '';
+        let totalScore = 0;
+        const API_BASE = 'http://localhost:8080';
+        
+        // DOM elements
+        const quoteDisplay = document.getElementById('quote-display');
+        const userInput = document.getElementById('user-input');
+        const submitBtn = document.getElementById('submit-btn');
+        const skipBtn = document.getElementById('skip-btn');
+        const newQuoteBtn = document.getElementById('new-quote-btn');
+        const resultDiv = document.getElementById('result');
+        const scoreSpan = document.getElementById('score');
+        
+        // Event listeners
+        submitBtn.addEventListener('click', submitAnswer);
+        skipBtn.addEventListener('click', skipQuestion);
+        newQuoteBtn.addEventListener('click', loadNewQuote);
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') submitAnswer();
+        });
+        
+        // Load first quote on page load
+        loadNewQuote();
+        
+        async function loadNewQuote() {
+            try {
+                setLoading(true);
+                const response = await fetch(`${API_BASE}/newquote`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    quoteDisplay.innerHTML = `"${data.prompt}..."`; 
+                    currentAnswer = data.answer;
+                    resetInput();
+                    hideResult();
+                } else {
+                    showError('Failed to load quote: ' + data.error);
+                }
+            } catch (error) {
+                showError('Connection error. Make sure your Java server is running on port 8080.');
+            } finally {
+                setLoading(false);
+            }
+        }
+        
+        async function submitAnswer() {
+            const userAnswer = userInput.value.trim();
+            if (!userAnswer) return;
+            
+            try {
+                setLoading(true);
+                const response = await fetch(`${API_BASE}/checkanswer`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        userAnswer: userAnswer,
+                        correctAnswer: currentAnswer
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    totalScore += data.points;
+                    updateScore();
+                    
+                    if (data.correct) {
+                        showResult(`🎉 Correct! Great job! (+${data.points} points)`, 'correct');
+                    } else {
+                        showResult(`❌ Not quite right. The answer was: "${data.correctAnswer}" (+${data.points} points for partial match)`, 'incorrect');
+                    }
+                } else {
+                    showError('Error checking answer');
+                }
+            } catch (error) {
+                showError('Connection error');
+            } finally {
+                setLoading(false);
+            }
+        }
+        
+        function skipQuestion() {
+            showResult(`The answer was: "${currentAnswer}"`, 'incorrect');
+        }
+        
+        function setLoading(loading) {
+            if (loading) {
+                submitBtn.disabled = true;
+                skipBtn.disabled = true;
+                userInput.disabled = true;
+                newQuoteBtn.textContent = 'just a minute...';
+            } else {
+                submitBtn.disabled = false;
+                skipBtn.disabled = false;
+                userInput.disabled = false;
+                newQuoteBtn.textContent = 'new quote';
+                userInput.focus();
+            }
+        }
+        
+        function resetInput() {
+            userInput.value = '';
+            userInput.focus();
+        }
+        
+        function showResult(message, type) {
+            resultDiv.innerHTML = message;
+            resultDiv.className = `result ${type}`;
+            resultDiv.style.display = 'flex';
+        }
+        
+        function hideResult() {
+            resultDiv.style.display = 'none';
+        }
+        
+        function showError(message) {
+            resultDiv.innerHTML = `⚠️ ${message}`;
+            resultDiv.className = 'result error';
+            resultDiv.style.display = 'flex';
+        }
+        
+        function updateScore() {
+            scoreSpan.textContent = totalScore;
+        }
+    </script>
+</body>
+</html>
