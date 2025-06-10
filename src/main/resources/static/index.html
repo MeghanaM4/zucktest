@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zuck test by meghana</title>
 
     <meta name="title" content="zuck test" />
-    <meta name="description" content="how well do you know The Social Network?" />
+    <meta name="description" content="how well do you know the social network?" />
 
     <style>
         body {
@@ -19,7 +20,7 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .chat-window {
             width: 500px;
             max-width: 90vw;
@@ -29,7 +30,7 @@
             overflow: hidden;
             font-size: 12px;
         }
-        
+
         .chat-header {
             background: linear-gradient(#4e69a2, #3b5998);
             color: white;
@@ -40,43 +41,43 @@
             align-items: center;
             gap: 8px;
         }
-        
+
         .chat-header .status-dot {
             width: 8px;
             height: 8px;
             background: #42b883;
             border-radius: 50%;
         }
-        
+
         .chat-body {
             height: 400px;
             overflow-y: auto;
             padding: 10px;
             background: white;
         }
-        
+
         .message {
             margin-bottom: 10px;
             display: flex;
             align-items: flex-start;
             gap: 8px;
         }
-        
+
         .message.bot {
             flex-direction: row;
         }
-        
+
         .message.user {
             flex-direction: row-reverse;
         }
-        
+
         .avatar {
             width: 32px;
             height: 32px;
             border-radius: 50%;
             flex-shrink: 0;
         }
-        
+
         .bot-avatar {
             background: #3b5998;
             display: flex;
@@ -86,7 +87,7 @@
             font-weight: bold;
             font-size: 14px;
         }
-        
+
         .user-avatar {
             background: #42b883;
             display: flex;
@@ -96,7 +97,7 @@
             font-weight: bold;
             font-size: 14px;
         }
-        
+
         .message-bubble {
             max-width: 300px;
             padding: 8px 12px;
@@ -105,24 +106,24 @@
             line-height: 1.4;
             word-wrap: break-word;
         }
-        
+
         .bot .message-bubble {
             background: #f1f1f1;
             color: #333;
         }
-        
+
         .user .message-bubble {
             background: #0084ff;
             color: white;
         }
-        
+
         .timestamp {
             font-size: 10px;
             color: #8a8a8a;
             text-align: center;
             margin: 5px 0;
         }
-        
+
         .score-display {
             background: #fff3cd;
             border: 1px solid #ffeaa7;
@@ -133,7 +134,7 @@
             font-weight: bold;
             color: #856404;
         }
-        
+
         .chat-input {
             border-top: 1px solid #e5e5e5;
             padding: 10px;
@@ -142,7 +143,7 @@
             gap: 8px;
             align-items: center;
         }
-        
+
         .input-field {
             flex: 1;
             border: 1px solid #ccc;
@@ -152,12 +153,13 @@
             outline: none;
             font-family: inherit;
         }
-        
+
         .input-field:focus {
             border-color: #3b5998;
         }
-        
-        .send-btn, .action-btn {
+
+        .send-btn,
+        .action-btn {
             background: #4267b2;
             color: white;
             border: none;
@@ -167,27 +169,29 @@
             cursor: pointer;
             font-weight: bold;
         }
-        
-        .send-btn:hover, .action-btn:hover {
+
+        .send-btn:hover,
+        .action-btn:hover {
             background: #365899;
         }
-        
-        .send-btn:disabled, .action-btn:disabled {
+
+        .send-btn:disabled,
+        .action-btn:disabled {
             background: #ccc;
             cursor: not-allowed;
         }
-        
+
         .action-buttons {
             display: flex;
             gap: 5px;
             margin-top: 5px;
         }
-        
+
         .loading {
             font-style: italic;
             color: #666;
         }
-        
+
         .error-message {
             background: #f8d7da;
             color: #721c24;
@@ -196,7 +200,7 @@
             padding: 8px;
             margin: 5px 0;
         }
-        
+
         .correct-answer {
             background: #d4edda;
             color: #155724;
@@ -205,7 +209,7 @@
             padding: 8px;
             margin: 5px 0;
         }
-        
+
         .typing-indicator {
             display: none;
             padding: 8px 12px;
@@ -213,62 +217,79 @@
             font-style: italic;
             font-size: 12px;
         }
-        
+
         .typing-dots {
             display: inline-block;
         }
-        
+
         .typing-dots::after {
             content: '';
             animation: typing 1.5s infinite;
         }
-        
+
         @keyframes typing {
-            0%, 20% { content: ''; }
-            40% { content: '.'; }
-            60% { content: '..'; }
-            80%, 100% { content: '...'; }
+
+            0%,
+            20% {
+                content: '';
+            }
+
+            40% {
+                content: '.';
+            }
+
+            60% {
+                content: '..';
+            }
+
+            80%,
+            100% {
+                content: '...';
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="chat-window">
         <div class="chat-header">
             <div class="status-dot"></div>
             <span>zuck test - how well do you know The Social Network?</span>
         </div>
-        
+
         <div class="chat-body" id="chat-body">
             <div class="score-display">
                 Score: <span id="score">0</span> points
             </div>
-            
+
             <div class="message bot">
-                <div class="avatar bot-avatar">Z</div>
+                <div class="avatar bot-avatar">AS</div>
                 <div class="message-bubble">
-                    Hey! Welcome to the zuck test. I'll give you quotes from The Social Network and you finish them. Ready?
+                    Hey! Welcome to the zuck test. I'll give you quotes from The Social Network and you finish them.
+                    Ready?
                 </div>
             </div>
-            
+
             <div class="timestamp" id="timestamp"></div>
-            
+
             <div class="typing-indicator" id="typing-indicator">
-                <div class="avatar bot-avatar">Z</div>
+                <div class="avatar bot-avatar">AS</div>
                 <div class="message-bubble">
                     <span class="typing-dots">typing</span>
                 </div>
             </div>
         </div>
-        
+
         <div class="chat-input">
-            <input type="text" id="user-input" class="input-field" placeholder="Type your answer here..." disabled autocomplete="off">
+            <input type="text" id="user-input" class="input-field" placeholder="Type your answer here..." disabled
+                autocomplete="off">
             <button id="send-btn" class="send-btn" disabled>Send</button>
         </div>
-        
+
         <div class="chat-input" style="border-top: none; padding-top: 0;">
             <div class="action-buttons">
-                <button id="new-quote-btn" class="action-btn">New Quote</button>
-                <button id="skip-btn" class="action-btn" disabled>Skip & Show Answer</button>
+                <button id="new-quote-btn" class="action-btn">new quote</button>
+                <button id="skip-btn" class="action-btn" disabled>skip & show answer</button>
             </div>
         </div>
     </div>
@@ -277,9 +298,10 @@
         let currentAnswer = '';
         let totalScore = 0;
         let messageCount = 0;
+        let answerRevealed = false;
         const API_BASE = 'https://zucktest.onrender.com';
-        
-        // DOM elements
+
+        //DOM elements
         const chatBody = document.getElementById('chat-body');
         const userInput = document.getElementById('user-input');
         const sendBtn = document.getElementById('send-btn');
@@ -287,88 +309,101 @@
         const newQuoteBtn = document.getElementById('new-quote-btn');
         const scoreSpan = document.getElementById('score');
         const typingIndicator = document.getElementById('typing-indicator');
-        
-        // Event listeners
+
+        //Event listeners
         sendBtn.addEventListener('click', submitAnswer);
         skipBtn.addEventListener('click', skipQuestion);
         newQuoteBtn.addEventListener('click', loadNewQuote);
         userInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') submitAnswer();
+            if (e.key === 'Enter') {
+                const inputValue = userInput.value.trim();
+                if (inputValue) {
+                    submitAnswer();
+                } else {
+                    // Empty input - trigger appropriate action
+                    if (answerRevealed) {
+                        loadNewQuote();
+                    } else {
+                        skipQuestion();
+                    }
+                }
+            }
         });
-        
-        // Initialize
+
+        //Initialize
         updateTimestamp();
         loadNewQuote();
-        
+
         function addMessage(content, isUser = false, isSystem = false) {
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${isUser ? 'user' : 'bot'}`;
-            
+
             const avatar = document.createElement('div');
             avatar.className = `avatar ${isUser ? 'user-avatar' : 'bot-avatar'}`;
-            avatar.textContent = isUser ? 'U' : 'Z';
-            
+            avatar.textContent = isUser ? 'U' : 'AS';
+
             const bubble = document.createElement('div');
             bubble.className = 'message-bubble';
-            
+
             if (isSystem) {
                 bubble.className += isSystem.includes('correct') ? ' correct-answer' : ' error-message';
             }
-            
+
             bubble.innerHTML = content;
-            
+
             messageDiv.appendChild(avatar);
             messageDiv.appendChild(bubble);
-            
+
             chatBody.insertBefore(messageDiv, typingIndicator);
             scrollToBottom();
             messageCount++;
-            
+
             if (messageCount % 5 === 0) {
                 updateTimestamp();
             }
         }
-        
+
         function showTyping() {
             typingIndicator.style.display = 'flex';
             scrollToBottom();
         }
-        
+
         function hideTyping() {
             typingIndicator.style.display = 'none';
         }
-        
+
         function scrollToBottom() {
             chatBody.scrollTop = chatBody.scrollHeight;
         }
-        
+
         function updateTimestamp() {
             const now = new Date();
-            const time = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-            
+            const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
             const timestampDiv = document.createElement('div');
             timestampDiv.className = 'timestamp';
             timestampDiv.textContent = time;
-            
+
             chatBody.insertBefore(timestampDiv, typingIndicator);
         }
-        
+
         async function loadNewQuote() {
             try {
                 setLoading(true);
                 showTyping();
-                
-                // Simulate typing delay
+
+                //Simulate typing delay
                 await new Promise(resolve => setTimeout(resolve, 1000));
-                
+
                 const response = await fetch(`${API_BASE}/newquote`);
                 const data = await response.json();
-                
+
                 hideTyping();
-                
+
                 if (data.success) {
                     addMessage(`"${data.prompt}..."`);
                     currentAnswer = data.answer;
+                    answerRevealed = false;
                     resetInput();
                 } else {
                     addMessage('⚠️ Failed to load quote. Try again!', false, 'error');
@@ -380,22 +415,22 @@
                 setLoading(false);
             }
         }
-        
+
         async function submitAnswer() {
             const userAnswer = userInput.value.trim();
             if (!userAnswer) return;
-            
-            // Add user message
+
+            //Add user message
             addMessage(userAnswer, true);
             resetInput();
-            
+
             try {
                 setLoading(true);
                 showTyping();
-                
-                // Simulate thinking delay
+
+                //Simulate thinking delay
                 await new Promise(resolve => setTimeout(resolve, 800));
-                
+
                 const response = await fetch(`${API_BASE}/checkanswer`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -404,58 +439,60 @@
                         correctAnswer: currentAnswer
                     })
                 });
-                
+
                 const data = await response.json();
                 hideTyping();
-                
+
                 if (data.success) {
                     totalScore += data.points;
                     updateScore();
-                    
+
                     if (data.correct) {
-                        addMessage(`🎉 Exactly right! Great job! (+${data.points} points)`, false, 'correct');
+                        addMessage(`Congrats, you should go outside more. (+${data.points} points)`, false, 'correct');
                     } else {
-                        addMessage(`❌ Not quite. The answer was: "${data.correctAnswer}" (+${data.points} points for trying)`, false, 'error');
+                        addMessage(`Eh. Kinda. the right answer was: "${data.correctAnswer}" (+${data.points} partial credit)`, false, 'error');
                     }
                 } else {
-                    addMessage('Error checking answer. Try again!', false, 'error');
+                    addMessage('Error checking answer. nice job, you broke it.', false, 'error');
                 }
             } catch (error) {
                 hideTyping();
-                addMessage('Connection error. Try again!', false, 'error');
+                addMessage('Connection error. Try again.', false, 'error');
             } finally {
                 setLoading(false);
             }
         }
-        
+
         function skipQuestion() {
-            addMessage('*skipped*', true);
+            addMessage('*coward*', true);
             addMessage(`The answer was: "${currentAnswer}"`, false, 'error');
+            answerRevealed = true;
         }
-        
+
         function setLoading(loading) {
             if (loading) {
                 sendBtn.disabled = true;
                 skipBtn.disabled = true;
                 userInput.disabled = true;
-                newQuoteBtn.textContent = 'Loading...';
+                newQuoteBtn.textContent = 'loading...';
             } else {
                 sendBtn.disabled = false;
                 skipBtn.disabled = false;
                 userInput.disabled = false;
-                newQuoteBtn.textContent = 'New Quote';
+                newQuoteBtn.textContent = 'new quote';
                 userInput.focus();
             }
         }
-        
+
         function resetInput() {
             userInput.value = '';
             userInput.focus();
         }
-        
+
         function updateScore() {
             scoreSpan.textContent = totalScore;
         }
     </script>
 </body>
+
 </html>
