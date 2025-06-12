@@ -95,7 +95,7 @@ Club, Roosevelt punched the Porc.
 ERICA
 Which one?
 MARK
-The Porcellian, the Pore, it's the best
+The Porcellian, the Porc, it's the best
 of the best.
 ERICA
 Which Roosevelt?
@@ -1259,7 +1259,7 @@ Right.
 TYLER
 Yes.
 CAMERON
-We'd love fort you to work with us, Mark.
+We'd love for you to work with us, Mark.
 I mean, we need a gifted programmer who's
 creative.
 TYLER
@@ -3973,7 +3973,7 @@ College, this was all resolved.
 DUSTIN
 Nine-hundred and eighty-eight.
 EDUARDO
-Someone from the Pore or the Fly must
+Someone from the Porc or the Fly must
 have reported it. For all I know it was
 the Winklevosses.
 MARK

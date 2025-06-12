@@ -1,3 +1,4 @@
+package com.meghanainc;
 
 // a script to isolate all the dialogue of the social network
 
@@ -9,7 +10,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class isolateDialogue {
+public class IsolateDialogue {
 
     public static String linesPath = "src\\main\\resources\\lines.txt";
     public static String scriptPath = "src\\main\\resources\\socialnetwork.txt";
