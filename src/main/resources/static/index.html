@@ -344,7 +344,6 @@
         let answerRevealed = false;
         const API_BASE = 'https://zucktest.onrender.com';
 
-        //DOM elements
         const chatBody = document.getElementById('chat-body');
         const userInput = document.getElementById('user-input');
         const sendBtn = document.getElementById('send-btn');
@@ -355,7 +354,6 @@
         const floatingScore = document.getElementById('floating-score');
         const floatingScoreValue = document.getElementById('floating-score-value');
 
-        //Event listeners
         sendBtn.addEventListener('click', submitAnswer);
         skipBtn.addEventListener('click', skipQuestion);
         newQuoteBtn.addEventListener('click', loadNewQuote);
@@ -445,7 +443,6 @@
                 if (data.success) {
                     addMessage(`"${data.prompt}..."`);
                     currentAnswer = data.answer;
-                    answerRevealed = false;
                     resetInput();
                 } else {
                     addMessage('⚠️ Failed to load quote. Try again!', false, 'error');
@@ -460,7 +457,6 @@
 
         async function submitAnswer() {
             const userAnswer = userInput.value.trim();
-            if (!userAnswer) return;
 
             addMessage(userAnswer, true);
             resetInput();
@@ -491,7 +487,7 @@
                         addMessage(`Congrats, you should go outside more. (+${data.points} points)`, false, 'correct');
                         answerRevealed = true;
                     } else {
-                        addMessage(`Eh. Kinda. the right answer was: "${data.correctAnswer}" (+${data.points} partial credit)`, false, 'error');
+                        addMessage(`Eh. Kinda. the correct answer was: "${data.correctAnswer}" (+${data.points} partial credit)`, false, 'error');
                         answerRevealed = true;
                     }
                 } else {
