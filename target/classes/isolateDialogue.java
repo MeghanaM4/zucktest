@@ -11,9 +11,9 @@ import java.util.Scanner;
 
 public class isolateDialogue {
 
-    public static String linesPath = "C:\\Users\\megha\\zucktest\\lines.txt";
-    public static String scriptPath = "C:\\Users\\megha\\zucktest\\socialnetwork.txt";
-    public static String dialoguePath = "C:\\Users\\megha\\zucktest\\dialogue.txt";
+    public static String linesPath = "src\\main\\resources\\lines.txt";
+    public static String scriptPath = "src\\main\\resources\\socialnetwork.txt";
+    public static String dialoguePath = "src\\main\\resources\\dialogue.txt";
 
     static String[] characters = { "MARK", "EDUARDO", "CHRIS", "DUSTIN", "SEAN", "JENNY", "ALICE", "CHRISTY", "DIVYA",
             "TYLER", "CAMERON", "SY", "GRETCHEN", "ERICA", "MARYLIN", "LARRY", "AMY", "PRINCE ALBERT", "GAGE",

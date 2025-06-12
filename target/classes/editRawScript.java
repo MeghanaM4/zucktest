@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 public class editRawScript {
     public static void main(String[] args) throws IOException {
-        String scriptPath = "C:\\Users\\megha\\zucktest\\socialnetworkRaw.txt";
-        String newpath = "C:\\Users\\megha\\zucktest\\socialnetwork.txt";
+        String scriptPath = "src\\main\\resources\\socialnetworkRaw.txt";
+        String newpath = "src\\main\\resources\\socialnetwork.txt";
         File file = new File(scriptPath);
         try (Scanner davidfinch = new Scanner(file);
                 FileWriter sorkin = new FileWriter(newpath, true)) {

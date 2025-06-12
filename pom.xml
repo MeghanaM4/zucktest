@@ -7,6 +7,7 @@
     
     <groupId>com.meghanainc</groupId>
     <artifactId>zucktest</artifactId>
+    <name>zucktest</name>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     

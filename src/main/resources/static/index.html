@@ -29,6 +29,7 @@
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
             overflow: hidden;
             font-size: 12px;
+            position: relative;
         }
 
         .chat-header {
@@ -133,6 +134,42 @@
             text-align: center;
             font-weight: bold;
             color: #856404;
+        }
+
+        .floating-score {
+            position: absolute;
+            top: 10px;
+            right: -120px;
+            background: #4267b2;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .floating-score.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .floating-score::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-right: 6px solid #4267b2;
         }
 
         .chat-input {
@@ -292,6 +329,12 @@
                 <button id="skip-btn" class="action-btn" disabled>skip & show answer</button>
             </div>
         </div>
+
+        <div class="floating-score" id="floating-score">
+            Score: <span id="floating-score-value">0</span>
+        </div>
+
+
     </div>
 
     <script>
@@ -309,28 +352,28 @@
         const newQuoteBtn = document.getElementById('new-quote-btn');
         const scoreSpan = document.getElementById('score');
         const typingIndicator = document.getElementById('typing-indicator');
+        const floatingScore = document.getElementById('floating-score');
+        const floatingScoreValue = document.getElementById('floating-score-value');
 
         //Event listeners
         sendBtn.addEventListener('click', submitAnswer);
         skipBtn.addEventListener('click', skipQuestion);
         newQuoteBtn.addEventListener('click', loadNewQuote);
+        chatBody.addEventListener('scroll', handleScroll);
+
         userInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 const inputValue = userInput.value.trim();
-                if (inputValue) {
+                if (inputValue || !answerRevealed) {
                     submitAnswer();
                 } else {
-                    // Empty input - trigger appropriate action
                     if (answerRevealed) {
                         loadNewQuote();
-                    } else {
-                        skipQuestion();
                     }
                 }
             }
         });
 
-        //Initialize
         updateTimestamp();
         loadNewQuote();
 
@@ -392,7 +435,6 @@
                 setLoading(true);
                 showTyping();
 
-                //Simulate typing delay
                 await new Promise(resolve => setTimeout(resolve, 1000));
 
                 const response = await fetch(`${API_BASE}/newquote`);
@@ -420,7 +462,6 @@
             const userAnswer = userInput.value.trim();
             if (!userAnswer) return;
 
-            //Add user message
             addMessage(userAnswer, true);
             resetInput();
 
@@ -428,7 +469,6 @@
                 setLoading(true);
                 showTyping();
 
-                //Simulate thinking delay
                 await new Promise(resolve => setTimeout(resolve, 800));
 
                 const response = await fetch(`${API_BASE}/checkanswer`, {
@@ -449,8 +489,10 @@
 
                     if (data.correct) {
                         addMessage(`Congrats, you should go outside more. (+${data.points} points)`, false, 'correct');
+                        answerRevealed = true;
                     } else {
                         addMessage(`Eh. Kinda. the right answer was: "${data.correctAnswer}" (+${data.points} partial credit)`, false, 'error');
+                        answerRevealed = true;
                     }
                 } else {
                     addMessage('Error checking answer. nice job, you broke it.', false, 'error');
@@ -491,7 +533,23 @@
 
         function updateScore() {
             scoreSpan.textContent = totalScore;
+            floatingScoreValue.textContent = totalScore;
         }
+
+        function handleScroll() {
+            const scoreDisplay = document.querySelector('.score-display');
+            const rect = scoreDisplay.getBoundingClientRect();
+            const chatBodyRect = chatBody.getBoundingClientRect();
+
+            const isVisible = rect.top >= chatBodyRect.top && rect.bottom <= chatBodyRect.bottom;
+
+            if (isVisible) {
+                floatingScore.classList.remove('visible');
+            } else {
+                floatingScore.classList.add('visible');
+            }
+        }
+
     </script>
 </body>
 
