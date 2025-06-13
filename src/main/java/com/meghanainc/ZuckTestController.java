@@ -52,8 +52,8 @@ public class ZuckTestController {
                         break; 
                     }
                 }
-                cans = cans.substring(extraWord.length()); // okay this feels cool
-                firstHalf = extraWord + " " + firstHalf;
+                cans = cans.substring(extraWord.length()).trim(); // okay this feels cool
+                firstHalf = firstHalf + " " + extraWord;
 
             }
 

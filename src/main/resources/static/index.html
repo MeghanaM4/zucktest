@@ -362,12 +362,12 @@
         userInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 const inputValue = userInput.value.trim();
-                if (inputValue || !answerRevealed) {
+                if (inputValue == "" && !answerRevealed) {
+                    skipQuestion();
+                } else if (inputValue || !answerRevealed) {
                     submitAnswer();
-                } else {
-                    if (answerRevealed) {
+                } else if (answerRevealed) {
                         loadNewQuote();
-                    }
                 }
             }
         });
@@ -453,11 +453,12 @@
             } finally {
                 setLoading(false);
             }
+            answerRevealed = false;
         }
 
         async function submitAnswer() {
             const userAnswer = userInput.value.trim();
-
+            
             addMessage(userAnswer, true);
             resetInput();
 
@@ -489,6 +490,7 @@
                     } else {
                         addMessage(`Eh. Kinda. the correct answer was: "${data.correctAnswer}" (+${data.points} partial credit)`, false, 'error');
                         answerRevealed = true;
+
                     }
                 } else {
                     addMessage('Error checking answer. nice job, you broke it.', false, 'error');
