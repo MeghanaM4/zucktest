@@ -1,16 +1,11 @@
 FROM THE BLACK WE HEAR—
-MARK (V.O.)
 Did you know there are more people with
 genius IQ's living in China than there
 are people of any kind living in the
 United States?
-ERICA (V.O.)
 That can't possibly be true.
-MARK (V.O.)
 It is.
-ERICA (V.O.)
 What would account for that?
-MARK (V.O.)
 Well, first, an awful lot of people live
 in China. But here's my question:
 How do you distinguish yourself in a
@@ -196,7 +191,6 @@ MARK
 Did you really just say that?
 ERICA
 I was kidding.
-ERICA (CONT'D)
 Although just because something's trite
 it doesn't make it any less—
 MARK
@@ -295,7 +289,6 @@ study?I
 MARK
 Because you go to B.U.!
 ERICA stares at him...
-MARK (CONT'D)
 Do you want to get some food?
 ERICA
 I'm sorry you're not sufficiently
@@ -318,7 +311,6 @@ ERICA takes MARK'S hand and looks at him tenderly..
 ERICA
 You are probably going to be a very
 successful computer person.
-ERICA (CONT'D)
 But you're going to go through life
 thinking that girls don't like you
 because you're a nerd. And I want you to
@@ -332,7 +324,6 @@ Harvard Square.
 As MARK continues on, he passes a group of people heading in
 the opposite direction for a party.
 As MARK'S steady and determined stride continues, he'll pass
-by all kinds of (seemingly) happy, well-adjusted, socially
 adept people.
 The pulsing intro of a song crashes in that will take us
 through the following sequence
@@ -354,14 +345,12 @@ This is the only place he's comfortable.
 TITLE:
 8:13 PM
 He begins blogging.
-MARK (V.O.)
 Erica Albright's a bitch. Do you think
 that's because her family changed their
 name from Albrecht or do you think it's
 because all B.U. girls are bitches?
 He takes a good gulp of his drink. We see the words we're
 hearing filling up his computer screen—
-MARK (V.O.) (CONT'D)
 For the record, she may look like a 34C
 but she's getting all kinds of help from
 our friends at Victoria's Secret. She's a
@@ -369,7 +358,6 @@ our friends at Victoria's Secret. She's a
 advertising.
 TITLE:
 9:48 PM
-MARK (V.O.)
 The truth is she has a nice face. I need
 to do something to help me take my mind
 off her. Easy enough, except I need an
@@ -381,14 +369,12 @@ on the bed behind MARK and opens one for himself.
 MARK has moved his mouse to an icon on his desktop labeled
 "Kirkland Facebook". He clicks and opens it. A menu of photos
 appear. He blogs again.
-MARK (V.O.) (CONT'D)
 I'm a little intoxicated, I'm not gonna
 lie. So what if it's not even 10PM and
 it's a Tuesday night? The Kirkland
 facebook is open on my desktop and some
 of these people have pretty horrendous
 facebook pics.
-MARK (V.O.) (CONT'D)
 Billy Olson's sitting here and had the
 idea of putting some of these next to
 pictures of farm animals and have people
@@ -397,7 +383,6 @@ It resembles the kind of bus that would take you to the rental
 car place but on board are two-dozen COLLEGE GIRLS who are
 dressed for a party. Last minute make-up touch-ups are being
 done and a joint is being passed.
-MARK (V.O.)
 I think he's on to something.
 TITLE:
 10:17 PM
@@ -414,13 +399,11 @@ clubs in the world.
 Four college girls are already waiting in line but that
 number's about to grow as the bus pulls up and opens its
 doors.
-MARK (VO)
 —will be more implicit than, say,
 choosing a number to represent each
 person's hotness like they do on
 hotornot.com. The first thing we're going
 to need is a lot of pictures.
-MARK (VO) (CONT'D)
 Unfortunately, Harvard doesn't keep a
 public centralized facebook so I'm going
 to have to get all the images from the
@@ -428,7 +411,6 @@ individual houses that people are in. Let
 the hacking begin.
 There are two more kids in the room with MARK—DUSTIN
 MOSKOVITZ and CHRIS HUGHES.
-MARK (V.O.)
 First up is Kirkland. They keep
 everything open and allow indexes in
 their Apache configuration, so a little
@@ -454,7 +436,6 @@ semester.
 MARK finishes another drink and gets back to his work.
 TITLE:
 1:03 AM
-MARK (V.O.)
 Next is Elliot. They're also open but
 with no indexes on Apache. I can run an
 empty search and it returns all of the
@@ -471,7 +452,6 @@ We see a shot of uniformed FEMALE BARTENDERS making a couple
 of drinks with top-shelf bottles, a DJ working the highest end
 equipment and 20 year old guys, some of whom look 15, in
 blazers, khakis and club ties.
-MARK (V.O)
 Lowell has some security. They require a
 username/password combo and I'm going to
 go ahead and say they don't have access
@@ -537,37 +517,30 @@ take out a few white pills. Two girls are dancing with each
 other and move into a kiss.
 MARK'S voiceovers are starting to overlap and cascade into
 each other—
-MARK (V.O.) (CONT'D)
 Adams has no security but limits the
 number of results to twenty a page. All I
 need to do is break out the same script I
 used on Lowell and we're set.
-MARK (V.O.) (CONT'D)
 Quincy has no online facebook, what a
 sham. Nothing I can do about that.
 MARK'S DORM ROOM - NIGHT
 Instructions and images fly across MARK'S screen—
-MARK (V.O.)
 Dunster is intense. Not only is there no
 public directory but there's no—
-MARK (V.O.) (CONT'D)
 Leverett is a little better. It's
 slightly obnoxious that they only let you
 view one picture at a time and I'm not
 about to—
-MARK (V.O.) (CONT'D)
 —definitely necessary to break out the
 emacs and modify that perl script with—
 EDUARDO SAVERIN, a sweet-looking Brazilian sophomore wearing a
 three-piece suit is rushing up the stairs two at a time.
 TITLE:
 2:08 AM
-MARK (V.O.)
 Done.
 EDUARDO gets to the top of the stairs and hurries into—
 EDUARDO
 What's going on?
-MARK (V.O.)
 Perfect timing. Eduardo's here and he's
 going to have the key ingredient.
 EDUARDO
@@ -612,10 +585,8 @@ window. When the equation's done it looks like this:
 Girl A:
 Ea =
 1
-1 + 10(Rb - Ra) / 400
 Girl B:
 Eb = _1
-1 + 10(Ra - Rb) / 400
 EDUARDO
 Give each girl a base rating of 1400. At
 any given time "Girl A" has a rating R-a
@@ -641,11 +612,9 @@ ALL
 The one on the left.
 MARK clicks the girl on the left and another picture takes the
 place of the girl on the right.
-ALL (CONT'D)
 On the right.
 MARK clicks the girl on the right while another picture takes
 the place of the girl on the left.
-ALL (CONT'D)
 Still the right.
 EDUARDO
 It works.
@@ -702,14 +671,12 @@ others.
 In the background a GIRL is at her computer and in the
 foreground ERICA is sitting in bed taking notes from a
 textbook.
-GIRL (ERICA'S ROOMMATE)
 Oh shit.
 Albright?
 ERICA'S ROOMMATE
 He blogged about you.
 ERICA looks at her for a moment, then gets up to look at her
 roommates computer—
-ERICA'S ROOMMATE (CONT'D)
 You don't want to read it.
 ERICA ignores her roommate. We see her mortification as she
 reads, and at that moment THREE GUYS appear in her open
@@ -718,7 +685,6 @@ a bra.
 COLLEGE GUY
 Erica.
 ERICA looks over at the guys—
-COLLEGE GUY (CONT'D)
 Is this yours? I stole it from a tranny.
 ERICA'S ROOMMATE
 Get the hell out of here!
@@ -761,7 +727,6 @@ Super Bowl.
 COX
 Alright.
 COX hangs up the phone.
-COX (CONT'D)
 I have to go in.
 COX'S WIFE
 What's going on?
@@ -989,7 +954,6 @@ statement. Would you like to do so?
 MARK
 Uh...I've, you know—
 MARK stands to address the Board.
-MARK (CONT'D)
 I've already apologized in the Crimson to
 the ABHW, to Fuerza Latina and to any
 women at Harvard who might have been
@@ -1072,7 +1036,6 @@ bit virtual address and a page size of
 A GIRL scribbles something on a piece of paper. Then hands it
 to the student next to her and nods that it should be passed
 over to MARK. While that's happening—
-PROFESSOR (CONT'D)
 The system uses one-level page tables,
 that start at address 0x0400. Maybe you
 want to have DMA on your 16-bit system,
@@ -1081,15 +1044,12 @@ reserved for hardware flags, etc.
 MARK opens the note. It reads "U dick".
 He looks over and sees a couple of GIRLS looking at him with
 contempt.
-PROFESSOR (CONT'D)
 Assume page table entries have eight
 status bits.
 MARK closes his laptop, gets up and starts to head out of the
 hall.
-PROFESSOR (CONT'D)
 The eight status bits would be—
 And I see we have our first surrender.
-PROFESSOR (CONT'D)
 Don't worry, Mr. Zuckerberg, brighter men
 than you have tried and failed at this
 class.
@@ -1101,10 +1061,8 @@ That is correct. Does everybody see how
 he got there?
 MARK walks out of the lecture hall and we
 As MARK comes out and heads onto the quad—
-CAMERON (OS)
 Mark?
 CAMERON and TYLER have been waiting by the entrance.
-CAMERON (CONT'D)
 Are you Mark Zuckerberg?
 MARK
 Yeah.
@@ -1187,7 +1145,6 @@ Really smart, man.
 MARK is looking at the framed black and white group pictures
 on the wall of old Porcellian classes. He sees a bra hanging
 over a lamp.
-DIVYA (CONT'D)
 Mark?
 MARK
 Yeah.
@@ -1277,7 +1234,6 @@ CAMERON
 Our first programmer graduated and went
 to work at Google. Our second programmer
 just got overwhelmed with school work.
-CAMERON (CONT'D)
 We would need you to build the site and
 write the code and we'll provide—
 MARK
@@ -1374,7 +1330,6 @@ EDUARDO
 Mark.
 MARK sees EDUARDO and waves him over to where he is. He wants
 to talk privately.
-EDUARDO (CONT'D)
 I'll be right back.
 EDUARDO joins MARK in the back of the room and they take up a
 spot next to a bay window that's covered on the outside with
@@ -1714,7 +1669,6 @@ SOPHOMORE
 The three lies—
 The first—
 48.
-SOPHOMORE (CONT'D)
 Shit!
 SENIOR
 Take your pants off.
@@ -1723,9 +1677,6 @@ I know.
 SENIOR
 Mr. Saverin.
 EDUARDO
-1) Harvard was founded in 1636, not 1638.
-2) Harvard wasn't founded by John Harvard
-and 3) That's not John Harvard.
 SENIOR
 Who is it?
 EDUARDO
@@ -1744,7 +1695,6 @@ A website called Network Solutions is up on Mark's screen. He
 hits a couple of keys and waits intently.
 Then the computer shows him what he wanted to see—
 www.theFacebook.com—DOMAIN NAME REGISTERED
-GAGE (V.O.)
 Mr. Zuckerberg registered the domain name
 theFacebook via network solutions.
 49.
@@ -1817,13 +1767,11 @@ DUSTIN
 Mark?
 Mark.
 MARK turns his head and looks at him...
-DUSTIN (CONT'D)
 There's a girl in your art history class.
 Her name is Stephanie Attis. Do you
 happen to know if she has a boyfriend?
 MARK just keeps looking at him—barely even blinking—"Why am
 I being interrupted?"
-DUSTIN (CONT'D)
 Have you ever seen her with anyone?
 And if not, do you happen to know if
 she's looking to go out with anyone?
@@ -1846,7 +1794,6 @@ leaning against the door.
 EDUARDO
 We were supposed to meet at 9.
 MARK is searching the pockets of his shorts for his keys.
-EDUARDO (CONT'D)
 Have you slept yet?
 MARK opens the door and they go into his suite—
 MARK
@@ -1855,7 +1802,6 @@ EDUARDO
 What?
 MARK'S in his own world as he sits at the computer and calls
 up theFacebook. The home page fills the screen.
-EDUARDO (CONT'D)
 Shit.
 That looks good.
 That looks really good.
@@ -1866,7 +1812,6 @@ The CAMERA surveys the screen as MARK slips through some
 functions to show EDUARDO and we see things that are now
 familiar—A photo, sex, a profile, a list of attributes, a
 poke application, etc.
-MARK (CONT'D)
 But watch.
 MARK'S called up a the Emacs program and quickly writes out
 several lines of code...
@@ -1949,7 +1894,6 @@ Sure.
 MARK
 Good.
 EDUARDO takes out his laptop—
-MARK (CONT'D)
 Gimmie the mailing list.
 EDUARDO
 "Jabberwockl2.listserv@Harvard E-D-U."
@@ -1972,11 +1916,9 @@ EDUARDO
 You know what? Let's go get a drink and
 celebrate. I'm buying.
 MARK is staring at the computer...
-EDUARDO (CONT'D)
 Mark?
 MARK doesn't hear him. We just see MARK'S head from the back
 and it's ever so slightly bobbing back and forth...
-EDUARDO (CONT'D)
 Mark?
 Are you praying?
 THE KROKODILOES, Harvard's oldest male a Capella group, are
@@ -2019,14 +1961,12 @@ screen gets his attention in a hurry.
 He swivels the laptop toward himself—
 He starts quickly scrolling and reading it and we PUSH IN on
 his face as the blood starts draining away...
-K.C. (CONT'D)
 Div!
 What?
 DIVYA shuts the laptop, grabs it off the table—
 Puts it back—
 People are starting to turn and see what the commotion is
 about as the singing continues.
-K.C. (CONT'D)
 What is wrong?
 DIVYA starts to bolt out of the pub. His foot gets caught on a
 chair leg and he falls hard face-first to the floor.
@@ -2046,7 +1986,6 @@ Crimson in his hands.
 DIVYA
 Hey!
 The twins are in the zone and don't pay any attention.
-DIVYA (CONT'D)
 Hey!
 CAMERON
 Not now, we need 20 minutes.
@@ -2054,7 +1993,6 @@ DIVYA
 Okay. I just wanted to let you know
 Zuckerberg stole our website.
 TYLER stops rowing and then CAMERON. They look at DIVYA...
-DIVYA (CONT'D)
 Mark Zuckerberg stole our website. It's
 been live for more than 36 hours.
 They're in gear. CAMERON'S taken a quick shower but didn't dry
@@ -2094,8 +2032,6 @@ appreciate it.
 CAMERON
 I know, that's how he talks.
 DIVYA
-(off another copy of the
-Crimson)
 "As of yesterday evening, Zuckerberg said
 over 650 students had registered to use
 theFacebook.com. He said he anticipated
@@ -2142,8 +2078,6 @@ half while he—
 CAMERON
 He never lied to our faces .
 DIVYA
-(DIVYA tosses the Crimson to
-TYLER)
 He never saw our faces! He lied to our e-
 mail accounts and he got himself a 42-day
 head start because he knows what
@@ -2224,7 +2158,6 @@ Crimson and we're not suing anybody.
 DIVYA
 Why not?
 CAMERON wants to answer the question but doesn't...
-DIVYA (CONT'D)
 I don't understand, why not?
 CAMERON
 He's gonna say it's stupid.
@@ -2293,7 +2226,6 @@ Let me tell you why I'm asking. I'm
 wondering why, if you needed a thousand
 dollars for an internet venture, you
 didn't ask my clients for it.
-GAGE (CONT'D)
 They'd demonstrated to you an interest in
 this kind of thing so—
 MARK
@@ -2341,7 +2273,6 @@ Does it matter?
 SY
 No.
 The lamps in Harvard Yard light the snow falling.
-SPEAKER (VO)
 The light bulb event—the inciting action—
 was when he was at Out of Town News and
 picked up a copy of Popular Electronics
@@ -2359,7 +2290,6 @@ to happen without us, we've got to start
 it now." And so I said, "Okay, you're
 right. Let's get BASIC out there."
 He gets an appreciative LAUGH from the STUDENTS.
-SPEAKER (CONT'D)
 Most of you think you know the rest of
 the story but you may not.
 The beginnings of this industry were very
@@ -2369,7 +2299,6 @@ We HEAR a little muffled giggling coming from the row behind
 MARK and EDUARDO. MARK is too into the speech to notice but
 the giggling registers as a slight annoyance on EDUARDO'S
 face.
-SPEAKER (CONT'D)
 —had an 8080 microprocessor in it,
 unless you paid extra for a IK memory
 board, you had 256 bytes.
@@ -2528,7 +2457,6 @@ EDUARDO
 Okay, but they manage to make money
 selling pants...
 EDUARDO has seen something on the top of MARK'S mantle...
-EDUARDO (CONT'D)
 Mark, what is this?
 MARK
 What.
@@ -2580,7 +2508,6 @@ EDUARDO
 Don't screw around with me now. Look at
 me.
 MARK looks at EDUARDO—
-EDUARDO (CONT'D)
 The letter says we could face legal
 action.
 MARK
@@ -2636,7 +2563,6 @@ This was the first time you raised any of
 those concerns, right?
 MARK
 I'd raised concerns before.
-DIVYA/TYLER (NOT CAMERON)
 Bullshit./Not to us.
 GAGE
 Gentlemen.
@@ -2814,7 +2740,6 @@ was a bitch right before you made some
 ignorant crack about my family's name, my
 bra size and then rated women based on
 their "hotness".
-REGGIE (A FRIEND OF ERICA'S)
 Erica, is there a problem?
 ERICA
 No, there's no problem.
@@ -2928,7 +2853,6 @@ I'm a second year associate at the firm.
 My boss wanted me to sit in on the
 deposition phase.
 MARK nods...
-MARYLIN (CONT'D)
 What are you doing?
 MARK
 Checking in to see how it's going in
@@ -2936,11 +2860,9 @@ Bosnia.
 MARYLIN
 Bosnia?
 MARK nods...
-MARYLIN (CONT'D)
 They don't have roads but they have
 Facebook?
 MARK nods...
-MARYLIN (CONT'D)
 You must really hate the Winklevoss's.
 MARK
 I don't hate anybody.
@@ -3001,7 +2923,6 @@ There's no such thing as Harvard Law.
 TYLER
 Wait. Yes there is.
 TYLER goes to the bookshelf and pulls down a manual.
-TYLER (CONT'D)
 Harvard Student Handbook. Every freshman
 is issued one of these. Somewhere in this
 book it says—
@@ -3171,10 +3092,8 @@ She can't hear him in the shower.
 SEAN explores around a little more. He knows his way around a
 computer. He sees her "friends". Friend after friend after
 friend.
-SEAN (CONT'D)
 Jesus.
 He gets up and goes to the bathroom door—
-SEAN (CONT'D)
 Amy?
 AMY
 Yeah!
@@ -3188,7 +3107,6 @@ There's a snake in here, Amy.
 AMY
 What?!
 AMY grabs a towel and jumps out of the shower—
-AMY (CONT'D)
 Where?!
 SEAN
 There isn't a snake, but I need to ask
@@ -3241,7 +3159,6 @@ SECRETARY
 Yes.
 Very good.
 She hangs up the phone.
-SECRETARY (CONT'D)
 You can go in now.
 She points to a door and CAMERON and TYLER get up, quickly
 straighten themselves, and walk into
@@ -3259,10 +3176,8 @@ absence of me.
 SUMMERS motions for them to sit and they do. They take in some
 of the photographs around the room—SUMMERS with BILL CLINTON,
 etc.
-SUMMERS (CONT'D)
 Catherine, I have students in my office
 now.
-SUMMERS (CONT'D)
 Students.
 Undergrads.
 I don't know, from the looks of it they
@@ -3270,7 +3185,6 @@ want to sell me a Brooks Brothers
 franchise.
 Alright.
 SUMMERS hangs up the phone—
-SUMMERS (CONT'D)
 Good morning.
 CAMERON
 Good morning, sir. I'm Cameron Winklevoss
@@ -3281,7 +3195,6 @@ SUMMERS
 And you're here because...
 There's silence while SUMMERS appears to read over the
 letter...
-SUMMERS (CONT'D)
 Either one of you can answer.
 CAMERON
 I'm sorry, I thought you were reading the
@@ -3304,7 +3217,6 @@ Handbook , which is distributed to each
 freshman—under the heading "Standards of
 Conduct in the Harvard Community"—
 SUMMERS can't help an agonized sigh—
-CAMERON (CONT'D)
 —it says, "The College expects that all
 students will be honest and forthcoming
 in their dealings with members of this
@@ -3330,8 +3242,6 @@ What my brother and I came here today to
 ask of you, respectfully of course, is
 that—
 TYLER
-(a little frustrated with this
-bullshit)
 Sir, it's against University rules to
 steal from another student, plain and
 simple.
@@ -3572,7 +3482,6 @@ EDUARDO
 That's tough for me because my job is to—
 nevermind.
 MARK says nothing...
-EDUARDO (CONT'D)
 He's 25 minutes late.
 MARK
 He founded Napster when he was 19, he can
@@ -3613,7 +3522,6 @@ SEAN stops at a table to shake hands with a guy in a suit and
 kiss his girlfriend. It's sort of an incongruous sight—this
 22 year old kid who's able to work a room like Sinatra. Who
 the hell is this?
-EDUARDO (CONT'D)
 Take your time. And he does own a watch.
 CHRISTY
 Stop it.
@@ -3674,7 +3582,6 @@ SEAN
 And you are dry. Tori?
 CHRISTY
 No, I'm good.
-EDUARDO (V.O.)
 And then he went on to his second
 business venture, which was an online
 rolodex that he got thrown out of by Case
@@ -3725,7 +3632,6 @@ EDUARDO
 Yes.
 SEAN
 You want to buy a Tower Records, Eduardo?
-EDUARDO (V.O.)
 And he told story after story about life
 in Silicon Valley, and parties at Stanford
 and down in LA, and friends who'd become
@@ -3738,8 +3644,6 @@ EDUARDO
 Well...we're in 29 schools now and we
 have over 75,000 members—
 SEAN
-(ignoring EDUARDO and going for
-MARK)
 Tell me about the strategy you're using.
 MARK
 Okay. For instance, we wanted Baylor in
@@ -3832,7 +3736,6 @@ just a fan who came to say hi.
 EDUARDO
 He owned Mark after that dinner.
 SEAN's signing the check.
-EDUARDO (V.O.)
 He picked up the check, he told Mark
 they'd talk again soon and he was gone.
 But not before he made his biggest
@@ -3965,7 +3868,6 @@ At the end of the table, MARYLIN tries but fails to stifle a
 small laugh.
 EDUARDO looks down the table...MARYLIN does her best to look
 serious.
-EDUARDO (CONT'D)
 I didn't know you can't do that. I dealt
 with the various animal rights groups, I
 dealt with the Associate Dean of the
@@ -4233,13 +4135,11 @@ Yes.
 MARK
 Hang on.
 MARK'S scratching something out on a pad...
-MARK (CONT'D)
 I'm just checking your math on that. Yes,
 I got the same thing.
 GRETCHEN
 May I continue?
 MARK motions "yes"...
-GRETCHEN (CONT'D)
 After expressing misgivings about Mr.
 Zuckerberg taking the company and moving
 it to California for the summer, why did
@@ -4278,7 +4178,6 @@ Yikes.
 And at that moment a stray brick drops from the roof and
 crashes through a glass patio table.
 From inside the DOORBELL RINGS—
-DUSTIN (CONT'D)
 That's the doorbell.
 MARK
 I didn't know we had a doorbell.
@@ -4312,7 +4211,6 @@ He's stunned to see SEAN PARKER standing there with his
 girlfriend, SHARON.
 They all look at each other for a moment—
 Sean?
-MARK (CONT'D)
 Mark?
 Do
 SEAN
@@ -4348,16 +4246,13 @@ SEAN's looking around the place. DUSTIN and the INTERNS are
 standing off to the side, happy to be in the presence of Sean
 Parker. ANDREW'S still locked into his computer. MARK'S off in
 the kitchen.
-MARK (OS)
 Here you go.
 A beer comes flying out of the kitchen and SEAN catches it.
-MARK (OS) (CONT'D)
 Sharon.
 Another beer comes flying out which SHARON had no idea was
 coming and so it smashes into the fireplace.
 SHARON
 I'm so sorry. I didn't know you were—
-MARK (OS)
 No problem. Here you go.
 SHARON
 Wait—
@@ -4366,7 +4261,6 @@ for and it crashes to the floor.
 SEAN
 This house and this team are great. It's
 exactly what it should be.
-SEAN (CONT'D)
 I'm Sean Parker.
 ANDREW pays no attention as MARK comes out of the kitchen—
 MARK
@@ -4402,13 +4296,11 @@ I was crashing there for a little bit
 while I'm taking care of some things. But
 she's done for the summer so she's back
 at her parents' place.
-BEAUTIFUL WOMAN #1 (BRIANNA)
 The homeless rock star of Palo Alto.
 SEAN
 What's your plan for the summer?
 MARK has been subtly checking out the club and not paying
 attention.
-SEAN (CONT'D)
 Mark?
 MARK
 I'm sorry, I was looking at the
@@ -4423,7 +4315,6 @@ BRIANNA
 I'm going to the restroom.
 SEAN
 Okay.
-BEAUTIFUL WOMAN #2 (KELSEY)
 I'll go with you.
 The two girls exit—
 MARK
@@ -4445,7 +4336,6 @@ forty-thousand from his in-laws, opens a
 store and calls it Victoria's Secret. He
 makes a half-million dollars his first
 year.
-SEAN (CONT'D)
 He starts a catalogue, opens three more
 stores and after five years, he sells the
 company to Leslie Wexner and The Limited
@@ -4610,12 +4500,9 @@ Tremendous race.
 TYLER
 Thank you.
 CAMERON comes along.
-TYLER (CONT'D)
 This is my brother, Cameron.
 AIDE
 Excellent.
-(to the blue-blazered man
-behind him)
 Sir. His Royal Highness, Prince Albert.
 PRINCE ALBERT
 Ah.
@@ -4754,7 +4641,6 @@ CAMERON
 I need a real drink.
 CAMERON takes a few steps away as TYLER and DIVYA drop their
 heads in surrender but then CAMERON turns right back—
-CAMERON (CONT'D)
 Screw it. Let's gut the freakin' nerd.
 DIVYA grabs CAMERON and hugs him.
 TYLER
@@ -4819,7 +4705,6 @@ It's not a dish best served cold. It's
 best served immediately and relentlessly.
 SEAN opens the door and the soaking wet EDUARDO is standing
 there...
-SEAN (CONT'D)
 I'm gonna call you back.
 What's up?
 EDUARDO
@@ -5144,7 +5029,6 @@ CHRISTY
 Oh, your phone does work.
 EDUARDO reaches for his cell but CHRISTY grabs it first to
 check the ID.
-CHRISTY (CONT'D)
 It's Mark.
 CHRISTY tosses the still ringing phone back to him—
 EDUARDO
@@ -5156,7 +5040,6 @@ EDUARDO
 This'll be your first.
 EDUARDO'S gotten the gift box out of his half un-packed
 suitcase, tossed it to CHRISTY and finally answered the phone.
-EDUARDO (CONT'D)
 Yeah.
 INTERCUT WITH:
 MARK
@@ -5186,7 +5069,6 @@ CRASH EVER!
 What EDUARDO can't see behind his back is that CHRISTY has
 taken the gift box and lit it on fire with a cigarette
 lighter.
-MARK (CONT'D)
 If the servers are down for even a day,
 our entire reputation is irreversibly
 destroyed. Users are fickle. Friendster
@@ -5221,7 +5103,6 @@ comes back in and sprays out the fire.
 MARK
 That was the act of a child, not a
 businessman.
-MARK (CONT'D)
 And it certainly wasn't the act of a
 friend. You know how embarrassed I was
 for me to try and cash a check today? I'm
@@ -5418,7 +5299,6 @@ some kind of revenge stunt on Case Equity
 and that Manningham was so impressed that
 he was making an investment offer that
 was hard to turn down.
-EDUARDO (V.O.)
 I went out to California and I went
 straight to the new offices.
 And it's clear that we're in the offices of a new, high-tech,
@@ -5426,17 +5306,13 @@ very successful internet company. The Facebook logo in blue
 metallic letters on the wall, the maple desks, new computer
 monitors, carpeting, a wall covered in graffiti by an artist
 commissioned for the job and tons of young employees.
-EDUARDO (V.O.)
 I didn't know whether to dress for the
 party or for the business meeting so I
 kind of dressed for both.
 We see that most of the employees, especially the women, are
 dressed to go to an after-work, late-night party.
-EDUARDO (V.O.)
 But it didn't matter.
-GRETCHEN (V.O.)
 Why not?
-EDUARDO (V.O.)
 Because I wasn't called out there for
 either one.
 GRETCHEN
@@ -5447,11 +5323,9 @@ LAWYER
 Mr. Saverin, hey.
 EDUARDO turns to see the LAWYER he dealt with earlier standing
 by the door to a glass conference room.
-LAWYER (CONT'D)
 In here. Right over here.
 EDUARDO walks across the bullpen, where no one makes eye
 contact, and into—
-EDUARDO (V.O.)
 At first I thought he was joking, giving
 me more contracts to sign. But then I
 started reading.
@@ -5473,7 +5347,6 @@ EDUARDO goes back out into—
 EDUARDO
 Mark?
 MARK doesn't look up from his computer—
-EDUARDO (CONT'D)
 Mark.
 MARK still doesn't look up—
 SEAN
@@ -5491,8 +5364,6 @@ down on the desk, breaking it into pieces.
 EDUARDO
 How 'bout now, are you still wired in?
 SEAN
-(to the girl at the desk he's
-leaning against)
 Call security.
 Everyone in the office is frozen, silent and watching.
 EDUARDO
@@ -5569,7 +5440,6 @@ We'll get the signature.
 EDUARDO
 Tell me this isn't about me getting into
 the Phoenix!
-EDUARDO (CONT'D)
 You did it. I always knew you did it. You
 planted the story about the chicken.
 SEAN
@@ -5592,7 +5462,6 @@ I'm going.
 SEAN
 Hang on.
 SEAN hands EDUARDO a folded check.
-SEAN (CONT'D)
 I almost forgot, there's your $19,000. I
 wouldn't cash it, though, I drew it on
 the account you froze.
@@ -5617,7 +5486,6 @@ out of the number of members.
 999,942
 There's scattered applause and excitement as everyone watches.
 SEAN takes MARK aside.
-SEAN (CONT'D)
 You alright?
 MARK
 Yeah.
@@ -5773,7 +5641,6 @@ SEAN
 I can have them turn the music down.
 One of the policemen casually takes SEAN's hand and sees that
 his palm looks like he just used it to erase a blackboard.
-SEAN (CONT'D)
 That's not mine.
 POLICEMAN
 Okay, we're gonna need identification.
@@ -5871,7 +5738,6 @@ He opens the box—a thousand brand new business cards. He
 takes one of the business cards out and looks at it.
 I'm CEO...Bitch
 And over this we HEAR a woman's voice...
-MARYLIN (V.O.)
 Mark?
 MARK is sitting alone in the conference room. The only one
 left is MARYLIN, whose voice we just heard. The lights of the
@@ -5879,7 +5745,6 @@ San Francisco skyline fill the huge picture windows.
 MARYLIN
 Mark?
 MARK looks up at her...
-MARYLIN (CONT'D)
 We're done for the day.
 MARK
 Yeah. Yeah. I was just sitting here.

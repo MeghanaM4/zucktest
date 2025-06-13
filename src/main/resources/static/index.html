@@ -485,7 +485,7 @@
                     updateScore();
 
                     if (data.correct) {
-                        addMessage(`Congrats, you should go outside more. (+${data.points} points)`, false, 'correct');
+                        addMessage(`Congrats. you should probably go outside more. (+${data.points} points)`, false, 'correct');
                         answerRevealed = true;
                     } else {
                         addMessage(`Eh. Kinda. the correct answer was: "${data.correctAnswer}" (+${data.points} partial credit)`, false, 'error');
