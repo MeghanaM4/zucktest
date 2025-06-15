@@ -299,10 +299,14 @@
                 Score: <span id="score">0</span> points
             </div>
 
+            <div class="score-display">
+                total quotes: <span id="quotes">0</span> lines
+            </div>
+
             <div class="message bot">
                 <div class="avatar bot-avatar">AS</div>
                 <div class="message-bubble">
-                    Hey! Welcome to the zuck test. I'll give you quotes from The Social Network and you finish them.
+                    welcome to the zuck test. I'll give you quotes from The Social Network and you finish them.
                     Ready?
                 </div>
             </div>
@@ -340,6 +344,7 @@
     <script>
         let currentAnswer = '';
         let totalScore = 0;
+        let totalQuotes = 0;
         let messageCount = 0;
         let answerRevealed = false;
         const API_BASE = 'https://zucktest.onrender.com';
@@ -350,6 +355,7 @@
         const skipBtn = document.getElementById('skip-btn');
         const newQuoteBtn = document.getElementById('new-quote-btn');
         const scoreSpan = document.getElementById('score');
+        const quoteSpan = document.getElementById('quotes');
         const typingIndicator = document.getElementById('typing-indicator');
         const floatingScore = document.getElementById('floating-score');
         const floatingScoreValue = document.getElementById('floating-score-value');
@@ -442,6 +448,10 @@
 
                 if (data.success) {
                     addMessage(`"${data.prompt}..."`);
+
+                    totalQuotes++;
+                    updateQuotes();
+                    
                     currentAnswer = data.answer;
                     resetInput();
                 } else {
@@ -532,6 +542,10 @@
         function updateScore() {
             scoreSpan.textContent = totalScore;
             floatingScoreValue.textContent = totalScore;
+        }
+
+        function updateQuotes() {
+            quoteSpan.textContent = totalQuotes;
         }
 
         function handleScroll() {

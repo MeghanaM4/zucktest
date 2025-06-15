@@ -1,9 +1,11 @@
 package com.meghanainc;
 
 //things to add:
-//fix html
-//fix ?s with em dashes
+//fix unecessary scroll
+//add button to find repo and "about the site"
+//add pop up score window
 //split up long monologues (>2 sentences) (looking at you justin timberlake)
+//figure out em dash thing?
 //hard mode includes punctuation
 //remove lines from irrelevant characters (?)
 
