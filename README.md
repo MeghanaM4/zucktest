@@ -2,6 +2,8 @@
 a quiz where you can test your knowledge of dialogue from The Social Network (2010)       
 > visit [here](https://zucktest.onrender.com)
 
+<img style="width:500px" src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/8ca4f88ea26ff87537d82089637ffd00875d82ab_image.png">
+
 ## Why
 The social network is one of my favorite movies of all time, and when I first watched I'm pretty sure I looped the thing 17 times. I've had a lot of the dialogue memorized, especially since I have the screenplay downloaded on my phone and read it when I don't have internet on planes and car rides, but I wanted to properly test my knowledge and wrote a quick script to isolate the dialogue from the screenplay (.txt file found on [internet archive](https://archive.org/stream/thesocialnetwork_screenplay/thesocialnetwork_screenplay_djvu.txt)) and a crappy html website where you can play the game. This took embarrassingly long.          
 <br>
