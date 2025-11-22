@@ -67,7 +67,7 @@
         let totalQuotes = 0;
         let messageCount = 0;
         let answerRevealed = false;
-        const API_BASE = 'https://zucktest.up.railway.app/';
+        const API_BASE = 'https://zucktest.up.railway.app';
 
         const chatBody = document.getElementById('chat-body');
         const userInput = document.getElementById('user-input');
@@ -77,8 +77,6 @@
         const scoreSpan = document.getElementById('score');
         const quoteSpan = document.getElementById('quotes');
         const typingIndicator = document.getElementById('typing-indicator');
-        const floatingScore = document.getElementById('floating-score');
-        const floatingScoreValue = document.getElementById('floating-score-value');
 
         sendBtn.addEventListener('click', submitAnswer);
         skipBtn.addEventListener('click', skipQuestion);
@@ -261,7 +259,6 @@
 
         function updateScore() {
             scoreSpan.textContent = totalScore;
-            floatingScoreValue.textContent = totalScore;
         }
 
         function updateQuotes() {
@@ -274,12 +271,6 @@
             const chatBodyRect = chatBody.getBoundingClientRect();
 
             const isVisible = rect.top >= chatBodyRect.top && rect.bottom <= chatBodyRect.bottom;
-
-            if (isVisible) {
-                floatingScore.classList.remove('visible');
-            } else {
-                floatingScore.classList.add('visible');
-            }
         }
 
     </script>
