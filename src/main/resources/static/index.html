@@ -12,53 +12,73 @@
 </head>
 
 <body>
-    <div class="chat-window">
-        <div class="chat-header">
-            <div class="status-dot"></div>
-            <span>zuck test - how well do you know The Social Network?</span>
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; ">
+        <!-- November 2025 Meghana here, I cannot believe I didn't use tailwind. 
+         I'm so glad I don't have to code like this. -->
+         <div style="display: flex; flex-direction: column;">
+            <div style="flex-grow: 1;">
+
+            </div>
+
+            <div style="height: fit-content; border: 0.2rem #ffeaa7; background-color: #fff3cd;
+            padding: 0.5rem; border-radius: 4px; color: #856404; font-size: small;">
+            This was made by Meghana! Visit <a style="color: #856404; font-size: small; font-weight: bold;"
+                href="https://meghanaco">meghana.co</a> to see more of my projects.
+            <br /> Also, zuck test is <a style="color: #856404; font-size: small; font-weight: bold;"
+                href="https://github.com/meghanam4/zucktest">open source</a>
         </div>
+         </div>
 
-        <div class="chat-body" id="chat-body">
-            <div class="score-display">
-                Score: <span id="score">0</span> points
+        <div class="chat-window">
+            <div class="chat-header">
+                <div class="status-dot"></div>
+                <span>zuck test - how well do you know The Social Network?</span>
             </div>
 
-            <div class="score-display">
-                total quotes: <span id="quotes">0</span> lines
-            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="score-display">
+                    score: <span id="score">0</span> points
+                </div>
 
-            <div class="message bot">
-                <div class="avatar bot-avatar">AS</div>
-                <div class="message-bubble">
-                    welcome to the zuck test. I'll give you quotes from The Social Network and you finish them.
-                    Ready?
+                <div class="score-display">
+                    total quotes: <span id="quotes">0</span> lines
+                </div>
+
+                <div class="message bot">
+                    <div class="avatar bot-avatar">AS</div>
+                    <div class="message-bubble">
+                        welcome to the zuck test. I'll give you quotes from The Social Network and you finish them.
+                        Ready?
+                    </div>
+                </div>
+
+                <div class="timestamp" id="timestamp"></div>
+
+                <div class="typing-indicator" id="typing-indicator">
+                    <div class="avatar bot-avatar">AS</div>
+                    <div class="message-bubble">
+                        <span class="typing-dots">typing</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="timestamp" id="timestamp"></div>
+            <div class="chat-input">
+                <input type="text" id="user-input" class="input-field" placeholder="Type your answer here..." disabled
+                    autocomplete="off">
+                <button id="send-btn" class="send-btn" disabled>Send</button>
+            </div>
 
-            <div class="typing-indicator" id="typing-indicator">
-                <div class="avatar bot-avatar">AS</div>
-                <div class="message-bubble">
-                    <span class="typing-dots">typing</span>
+            <div class="chat-input" style="border-top: none; padding-top: 0;">
+                <div class="action-buttons">
+                    <button id="new-quote-btn" class="action-btn">new quote</button>
+                    <button id="skip-btn" class="action-btn" disabled>skip & show answer</button>
                 </div>
             </div>
         </div>
 
-        <div class="chat-input">
-            <input type="text" id="user-input" class="input-field" placeholder="Type your answer here..." disabled
-                autocomplete="off">
-            <button id="send-btn" class="send-btn" disabled>Send</button>
+        <div>
+
         </div>
-
-        <div class="chat-input" style="border-top: none; padding-top: 0;">
-            <div class="action-buttons">
-                <button id="new-quote-btn" class="action-btn">new quote</button>
-                <button id="skip-btn" class="action-btn" disabled>skip & show answer</button>
-            </div>
-        </div>
-
-
     </div>
 
     <script>
