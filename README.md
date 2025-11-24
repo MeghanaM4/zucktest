@@ -10,7 +10,7 @@ The social network is one of my favorite movies of all time, and when I first wa
 At some point, this stopped being all that interesting (I played enough of the game in the terminal before I got an actual website up) and became more of a petty feud I had with myself. I had to get this done just because I started it, not because it was technically challenging, cool, or in any way compelling to other people. I'm pretty sure this is a common problem.
 
 ## Methodology
-You may be going through my .java files going "Meghana, why did you make both isolateDialogue and editRawScript and also 4 different .txt files and "wow your index.html looks like you've never made a website before " and "did it really take fifteen hours to do this". And to that I say          
+You may be going through my .java files going "Meghana, why did you make both isolateDialogue and editRawScript and also 4 different .txt files and "wow your index.html looks like you've never made a website before" and "did it really take fifteen hours to do this". And to that I say          
 1) I wanted each rehaul of changing the script to be different for debugging and also I'm lazy.           
 2) This is the first time I'm making a website that has both backend and some frontend. Usually all my stuff is run in the terminal or websites that are just pure static html, so I'm pretty proud of what I've got.               
 3) I've made some mistakes.        
