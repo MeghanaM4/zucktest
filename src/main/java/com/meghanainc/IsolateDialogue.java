@@ -35,21 +35,18 @@ public class IsolateDialogue {
                     if (line.equals(character) || line.equals(character + " (V.O.)")
                             || line.equals(character + " (CONT'D)")) {
 
-                        davidfinch.mark(10000); // mark current position
-                        String next = davidfinch.readLine();
-
+                        davidfinch.mark(10000); //mark current position
+                        String next = davidfinch.readLine().trim();
                         if (next == null)
                             break;
-                        next = next.trim();
 
                         if (next.startsWith("(")) {
-                            next = davidfinch.readLine();
+                            next = davidfinch.readLine().trim();
                             if (next == null)
                                 break;
-                            next = next.trim();
                         }
 
-                        // if the next line isn't SEAN or INT. HARVARD SQUARE
+                        //if the next line isn't something like SEAN or INT. HARVARD SQUARE
                         if (!next.matches(".*\\b[A-Z\\-]{2,}\\b.*")) {
                             String full = checkCompleteSentence(next, davidfinch);
                             sorkin.write(full + "\n");
@@ -95,8 +92,8 @@ public class IsolateDialogue {
                 }
             }
 
-            // went from {2,} to {3,} to {4,} to {5,} because IQ's, SAT's, and WGET were
-            // all deleted by accident lmao
+            //went from {2,} to {3,} to {4,} to {5,} because IQ's, SAT's, and WGET were
+            //all deleted by accident haha
             if (nextLine.matches(".*\\b[A-Z\\-]{5,}\\b.*")) {
                 davidfinch.reset();
                 return fullBlock.toString().trim();
