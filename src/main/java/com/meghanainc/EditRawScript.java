@@ -18,7 +18,7 @@ public class EditRawScript {
             while (davidfinch.hasNextLine()) {
                 String line = davidfinch.nextLine().trim();
                 if (!line.matches(".*(INT\\.|EXT\\.|CUT TO:|CUT BACK TO:).*") &&
-                        !line.matches("^\\(.*\\)$") && !line.matches("^\\d{1,3} \\.$") && 
+                        !line.matches("^\\(.*\\)$") && !line.matches(".*\\d{1,3}\\s*\\..*") && 
                         !line.contains(")") && !line.contains("(")) {
                     sorkin.write(line + "\n");
                 }

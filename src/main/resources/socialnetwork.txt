@@ -534,7 +534,6 @@ Ea =
 Girl B:
 Eb = _1
 EDUARDO
-Give each girl a base rating of 1400. At
 any given time "Girl A" has a rating R-a
 and "Girl B" has a rating R-b.
 MARK
@@ -858,7 +857,6 @@ of seven houses. He set up the whole
 website in one night and he did it while
 he was drunk.
 CAMERON
-22 , 000 .
 TYLER
 Yeah.
 CAMERON
@@ -983,7 +981,6 @@ A GIRL scribbles something on a piece of paper. Then hands it
 to the student next to her and nods that it should be passed
 over to MARK. While that's happening—
 The system uses one-level page tables,
-that start at address 0x0400. Maybe you
 want to have DMA on your 16-bit system,
 who knows? The first few pages are
 reserved for hardware flags, etc.
@@ -1383,7 +1380,6 @@ GRETCHEN
 Did he offer terms?
 NIGHT
 MARK
-We'll split it 70-30. 70 for me 30 for
 you for putting up the thousand dollars
 and handling for everything on the
 business end. You're CFO.
@@ -1413,7 +1409,6 @@ They're suggesting I was jealous of
 Eduardo for getting punched by the
 Phoenix and began a plan to screw him out
 of a company I hadn't even invented yet.
-42.
 GRETCHEN
 Were you?
 SY
@@ -1446,7 +1441,6 @@ At any time in the weeks prior to Mark's
 telling you his idea, did he mention
 Tyler Winklevoss, Cameron Winklevoss,
 Divya Narendra or HarvardConnection?
-43.
 EDUARDO
 Yes. He said they'd asked him to work on
 their site but that he'd looked at what
@@ -1491,14 +1485,12 @@ You're offering a conclusion not found in
 evidence.
 GAGE
 We're about to find it in evidence.
-44.
 MUSIC kicks in that will tie this next section together as we
 Two printouts of web pages are taped to a white board—
 "Friendster" and "MySpace". Under the two pages, MARK draws a
 third page and titles it "NewCo".
 GAGE
 From Mark Zuckerberg to Tyler Winklevoss.
-November 30, 2003. "I read over all the
 stuff you sent me re Harvard Connection
 and it seems like it shouldn't take too
 long to implement, so we can talk about
@@ -1511,7 +1503,6 @@ few keys and the diagram on the whiteboard comes to life on
 his computer as we
 GAGE
 From Mark Zuckerberg to Cameron
-Winklevoss. December 1, 2003. "Sorry I
 was unreachable tonight. I just got about
 three of your missed calls. I was working
 on a problem set for my systems class."
@@ -1519,7 +1510,6 @@ CAMERON and TYLER are looking blankly at MARK who's giving
 them a casual "I'm not scared of you" look and we
 The MUSIC CONTINUES as EDUARDO and other prospective new
 members, all wearing tuxedos, are lined up in four rows.
-45.
 The boy at the front of each row has a bottle of Jack Daniels
 and drinks as long as they can before passing the bottle,
 relay style, to the boy in back of him as a few seniors look
@@ -1530,7 +1520,6 @@ their laptops as the PROFESSOR gives his lecture. When we get
 to MARK'S laptop we see that he's writing code and we
 GAGE
 From Mark Zuckerberg to Cameron and Tyler
-Winklevoss. December 10, 2003. "This week
 has been pretty busy thus far with
 classes and work so I think it's probably
 best to postpone the meeting."
@@ -1548,7 +1537,6 @@ EDUARDO'S at his desk on the phone when an envelope that says
 it. . .
 Every available wall space is covered with a diagram or a
 printout. EDUARDO comes in with the envelope.
-46.
 EDUARDO
 Mark—
 MARK
@@ -1580,11 +1568,9 @@ The MUSIC CONTINUES—
 GAGE
 From Mark Zuckerberg to Tyler and Cameron
 Winklevoss and Divya Narendra. December
-15, 2003. "I have a cs problem set that
 I'm just getting started with and it
 should be about 15 hours of coding so
 I'll be busy tomorrow night."
-47.
 DIVYA
 "I won't really be free to meet until
 next Wednesday afternoon."
@@ -1607,14 +1593,12 @@ Harvard as a senior announces—
 SENIOR
 As the plaque reads, this is John
 Harvard, founder of Harvard University in
-1638. It's also called The Statue of
 Three Lies. What are the three lies, Mr.
 Dowd?
 Mr. Dowd.
 SOPHOMORE
 The three lies—
 The first—
-48.
 Shit!
 SENIOR
 Take your pants off.
@@ -1643,7 +1627,6 @@ Then the computer shows him what he wanted to see—
 www.theFacebook.com—DOMAIN NAME REGISTERED
 Mr. Zuckerberg registered the domain name
 theFacebook via network solutions.
-49.
 GAGE
 To the best of your knowledge, had he
 even begun work on HarvardConnection?
@@ -1738,7 +1721,6 @@ And then another until he gets to his floor. He sprints down
 his hall toward his dorm room and barely notices EDUARDO
 leaning against the door.
 EDUARDO
-We were supposed to meet at 9.
 MARK is searching the pockets of his shorts for his keys.
 Have you slept yet?
 MARK opens the door and they go into his suite—
@@ -1842,7 +1824,6 @@ Good.
 EDUARDO takes out his laptop—
 Gimmie the mailing list.
 EDUARDO
-"Jabberwockl2.listserv@Harvard E-D-U."
 MARK opens up an e-mail and is writing a short message, then
 includes a link to the site—
 MARK
@@ -2576,7 +2557,6 @@ condescending question?
 GAGE just looks casually at MARK. MARK doesn't meet his gaze,
 or the looks from DIVYA, TYLER and CAMERON...
 SY
-I've got 12:45. Why don't we say that's
 lunch.
 GAGE
 Back at 2:30?
@@ -2881,7 +2861,6 @@ You can't get a meeting with Larry
 Summers.
 CAMERON
 My brother and I pay tuition at this
-school, we carry a 3.9 GPA at this
 school, we've won trophies for this
 school and we'll be rowing in the
 Olympics for this school. I want a
@@ -3629,7 +3608,6 @@ Exactly.
 SEAN
 It's like you're throwing the greatest
 party on campus and someone's telling you
-it's gotta be over at 11:00.
 MARK
 That's exactly right.
 SEAN
@@ -3728,7 +3706,6 @@ Moskovitz.
 SY
 We stipulate.
 GRETCHEN
-And that was April 13th, 2004.
 SY
 You can mark it.
 GRETCHEN
@@ -3939,7 +3916,6 @@ Hang on.
 Hit refresh.
 DUSTIN hits "refresh" on the desk-top computer. Then smiles...
 DUSTIN
-150,004.
 MARK
 150,000 members, Wardo.
 EDUARDO
@@ -4066,7 +4042,6 @@ congratulations from the crowd.
 MARK looks back at EDUARDO and smiles...EDUARDO gives him a
 pat on the back and we
 GRETCHEN
-$18,000.
 EDUARDO
 Yes .
 GRETCHEN
@@ -4382,13 +4357,11 @@ SERVER
 Yes sir.
 SEAN
 You can take this away and bring out the
-1942.
 SERVER
 Absolutely, Mr. Parker.
 MARK takes this in a moment before we
 We're looking at a stone bridge crossing a perfectly straight
 stretch of water against the backdrop of the medieval town of
-Henley, England—founded in 1179.
 And after a moment of placid quiet—
 —BOO SHI
 Two razor thin skulls explode for the final, agonizing hundred-
@@ -5125,11 +5098,9 @@ agreement.
 EDUARDO
 How many shares of stock will I own?
 LAWYER
-1,328,334.
 EDUARDO
 Jesus Christ.
 LAWYER
-That represents a 34.4% ownership share.
 Why the increase from the original 30%?
 EDUARDO
 Because you may need to dilute it to
@@ -5140,13 +5111,10 @@ EDUARDO
 Economics.
 LAWYER #2
 You should know that Mark's already taken
-his percentage from 60 down to 51.
 EDUARDO
 Mark doesn't care about money and he
 needs to be protected.
 LAWYER
-Dustin Moskovitz owns 6.81%, Sean Parker
-6.47% —
 EDUARDO
 I can live with that.
 LAWYER
@@ -5408,7 +5376,6 @@ I'm going.
 SEAN
 Hang on.
 SEAN hands EDUARDO a folded check.
-I almost forgot, there's your $19,000. I
 wouldn't cash it, though, I drew it on
 the account you froze.
 EDUARDO looks at SEAN...then suddenly and quickly cocks his
@@ -5616,9 +5583,7 @@ That's my inhaler.
 POLICEMAN #2
 How old are you?
 SORORITY GIRL
-I'm 21.
 ASHLEIGH
-I'm 21.
 POLICEMAN
 Lying only makes it worse.
 ASHLEIGH
@@ -5785,7 +5750,6 @@ and exits.
 MARK sits down at the computer. He logs on to Facebook.
 He types a name in the search box: "Erica Albright".
 Erica's name and picture come up, along with Boston
-University, '07. Mark smiles. She's on Facebook.
 He moves the mouse back and forth between two boxes: "Send a
 Message" and "Add as a Friend".
 He clicks on "Add as a Friend".

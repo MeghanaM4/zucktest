@@ -117,7 +117,6 @@ You think this is such a good idea?
 I need the algorithm.
 Mark—
 I need the algorithm.
-Give each girl a base rating of 1400. At any given time "Girl A" has a rating R-a and "Girl B" has a rating R-b.
 When any two girls are matched up there's an expectation of which will win based on their current rating, right?
 Yes. And those expectations are expressed this way.
 Let's write it. The two girls who we just saw get let in are now dancing on a table in their underwear.
@@ -175,8 +174,6 @@ I don't know, a three hour low-rate technical row before breakfast, a full cours
 22,000 page requests.
 22 , 000 ?!
 Cam, this guy hacked the into facebooks of seven houses. He set up the whole website in one night and he did it while he was drunk.
-22 , 000 .
-Yeah.
 How do you know he was drunk?
 He was blogging simultaneously. You know what I think?
 I'm way ahead of you.
@@ -313,7 +310,7 @@ I told him I thought it sounded great. It was a great idea. There was nothing to
 We're gonna need a little start-up cash to rent the servers and get it online.
 That was why.
 Did he offer terms?
-We'll split it 70-30. 70 for me 30 for you for putting up the thousand dollars and handling for everything on the business end. You're CFO.
+you for putting up the thousand dollars and handling for everything on the business end. You're CFO.
 And you said?
 I said "Let's do it".
 Okay. Did he add anything else?
@@ -323,7 +320,7 @@ Why do you think he said that?
 Gretchen, excuse me for interrupting but whose discovery is this?
 Sy, if you'll let me continue with my line of questioning—
 What are you suggesting?
-They're suggesting I was jealous of Eduardo for getting punched by the Phoenix and began a plan to screw him out of a company I hadn't even invented yet. 42.
+They're suggesting I was jealous of Eduardo for getting punched by the Phoenix and began a plan to screw him out of a company I hadn't even invented yet.
 Were you?
 Gretchen—
 Jealous of Eduardo?
@@ -332,7 +329,7 @@ Ma'am, I know you've done your homework and so you know that money isn't a big p
 I'll let you know how the party is.
 We recognize that you're a plaintiff in one suit involving Facebook and a witness in another.
 Yes sir.
-At any time in the weeks prior to Mark's telling you his idea, did he mention Tyler Winklevoss, Cameron Winklevoss, Divya Narendra or HarvardConnection? 43.
+At any time in the weeks prior to Mark's telling you his idea, did he mention Tyler Winklevoss, Cameron Winklevoss, Divya Narendra or HarvardConnection?
 Yes. He said they'd asked him to work on their site but that he'd looked at what they had and decided it wasn't worth his time. He said even his most pathetic friends knew more about getting people interested in a website than these guys.
 "These guys" meaning my clients.
 Yes. He resented—Mark resented that they— your clients, thought he needed to rehabilitate his image after Facemash but Mark didn't want to rehabilitate anything. With Facemash he'd hacked into the Harvard computers, he'd thumbed his nose at the Ad Board, he'd gotten a lot of notoriety. Facemash did exactly what he wanted it to do.
@@ -341,10 +338,10 @@ Not at the time I wasn't, but it really didn't have much to do with the Winklevo
 You weren't there!
 Ty. Were you aware that while Mr. Zuckerberg was building TheFacebook, he was leading the plaintiffs to believe he was building Harvard Connection?
 You're offering a conclusion not found in evidence.
-We're about to find it in evidence. 44.
-From Mark Zuckerberg to Tyler Winklevoss. November 30, 2003. "I read over all the stuff you sent me re Harvard Connection and it seems like it shouldn't take too long to implement, so we can talk about it after I get all the basic functionality up tomorrow night." The whiteboard is filled with diagrams now—login page,
-From Mark Zuckerberg to Cameron Winklevoss. December 1, 2003. "Sorry I was unreachable tonight. I just got about three of your missed calls. I was working on a problem set for my systems class."
-From Mark Zuckerberg to Cameron and Tyler Winklevoss. December 10, 2003. "This week has been pretty busy thus far with classes and work so I think it's probably best to postpone the meeting."
+We're about to find it in evidence.
+From Mark Zuckerberg to Tyler Winklevoss. stuff you sent me re Harvard Connection and it seems like it shouldn't take too long to implement, so we can talk about it after I get all the basic functionality up tomorrow night." The whiteboard is filled with diagrams now—login page,
+From Mark Zuckerberg to Cameron was unreachable tonight. I just got about three of your missed calls. I was working on a problem set for my systems class."
+From Mark Zuckerberg to Cameron and Tyler has been pretty busy thus far with classes and work so I think it's probably best to postpone the meeting."
 "I'm also really busy tomorrow." Anybody else feel like there's something up with this guy?
 Tell him okay but we've gotta make sure that we meet up before we all go off for break.
 Mark—
@@ -358,7 +355,7 @@ I already did.
 Hey, guess what? I made the second cut.
 Good job. You should be proud of that right there, don't worry if you don't make it any further.
 I'll get outa here.
-From Mark Zuckerberg to Tyler and Cameron Winklevoss and Divya Narendra. December 15, 2003. "I have a cs problem set that I'm just getting started with and it should be about 15 hours of coding so I'll be busy tomorrow night." 47.
+From Mark Zuckerberg to Tyler and Cameron Winklevoss and Divya Narendra. December I'm just getting started with and it should be about 15 hours of coding so I'll be busy tomorrow night."
 "I won't really be free to meet until next Wednesday afternoon."
 "...have to cancel Wednesday afternoon. I've basically been in the lab this whole time and also..."
 "Won't be able to do Saturday as I have to meet up with my parents to..."
@@ -388,7 +385,6 @@ February 4th, 2004—
 Mark? Mark.
 Dustin. People don't walk around with a sign on them that says—
 Mark?
-We were supposed to meet at 9.
 I have to add something.
 What?
 It's clean and simple. No Disneyland, no Live Nude Girls.
@@ -606,7 +602,7 @@ Do you think I deserve your full attention?
 I had to swear an oath before we began this deposition and I don't want to perjure myself so I have a legal obligation to say no.
 Okay. "No" you don't think I deserve your attention.
 I think if your clients want to sit on my shoulders and call themselves tall they have a right to give it a try. But there's no requirement that I enjoy sitting here listening to people lie. You have part of my attention—you have the minimum amount. The rest of my attention is back at the offices of Facebook where my colleagues and I are doing things that no one in this room, including and especially your clients, are intellectually or creatively capable of doing. Did I adequately answer your condescending question?
-I've got 12:45. Why don't we say that's lunch.
+lunch.
 Back at 2:30? Everyone gets up and we
 So, what were their names?
 Their names were Christy and Alice. They want to have drinks tonight. It's a nice men's room—mahogony stalls—in a nice club in Cambridge. We HEAR the thumping of the house music coming from the club.
@@ -686,7 +682,7 @@ There's no such thing as Harvard Law.
 Wait. Yes there is.
 —you can't steal from another student. This is what we needed. We're going to Summers.
 You can't get a meeting with Larry Summers.
-My brother and I pay tuition at this school, we carry a 3.9 GPA at this school, we've won trophies for this school and we'll be rowing in the Olympics for this school. I want a meeting with the goddam president of this school. Why Stanford?
+My brother and I pay tuition at this school, we've won trophies for this school and we'll be rowing in the Olympics for this school. I want a meeting with the goddam president of this school. Why Stanford?
 Why do you think?
 I'm sorry, I'm late for Bio-Chem.
 Okay.
@@ -909,7 +905,7 @@ Neither of you yet. TheFacebook is cool, that's what it's got going for it.
 Yeah.
 You don't want to ruin it with ads because ads aren't cool.
 Exactly.
-It's like you're throwing the greatest party on campus and someone's telling you it's gotta be over at 11:00.
+It's like you're throwing the greatest party on campus and someone's telling you
 That's exactly right.
 You don't even know what the thing is yet.
 I said exactly that.
@@ -939,8 +935,6 @@ I'm going to enter this into the record. Incorporation papers for Facebook, an L
 That's where my family lives.
 —and ask the respondent to stipulate that the articles of incorporation state the ownership as follows: 65 percent for Mark Zuckerberg, 30 percent for Eduardo Saverin and 5 percent for Dustin Moskovitz.
 We stipulate.
-And that was April 13th, 2004.
-You can mark it.
 Do you have anything here?
 Yes, thank you. Mr. Saverin, have you ever done anything that might be considered legitimate grounds for termination?
 No.
@@ -1005,8 +999,6 @@ Look—
 —as someone who's just really embarrassed the company in a bad way I wouldn't—
 It was the Winklevosses, Mark I
 Hang on. Hit refresh.
-150,004.
-150,000 members, Wardo.
 Congratulations, dude.
 Congratulations.
 You don't think it was strange that he was followed by private detectives?
@@ -1036,8 +1028,6 @@ Here.
 What's this?
 I opened a new account and put $18,000 in it. Will that get you through the summer?
 Welcome to Facebook.
-$18,000.
-Yes .
 In addition to the $1000 you'd already put up.
 Yes.
 A total of $19,000 now.
@@ -1100,7 +1090,7 @@ Yeah.
 Tell you what, gesture of good faith. While you're getting into a hundred schools. I'll put you on two continents.
 If you don't have a place to crash I think you should definitely come and live with us.
 Let's line up some shots. Excuse me.
-You can take this away and bring out the 1942.
+You can take this away and bring out the
 Tyler. AIDE Tremendous race.
 Thank you.
 Ah. AIDE Your highness, this is Cameron and Tyler Winklevoss.

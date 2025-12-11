@@ -38,13 +38,12 @@ public class ZuckTestController {
         try {
             String randLine = randomLine();
             String firstHalf = getFirstHalf(randLine);
-            String cans = getSecondHalf(randLine).trim(); // cans = correct answer
+            String cans = getSecondHalf(randLine).trim(); //cans = correct answer
 
-            // if the firstHalf has <4 words then add a word from the second half to the
-            // first
-            // I was going to put this in getFirstHalf() but you need the second half to do
-            // this properly
-            // and it's all very sad
+            //if the firstHalf has <4 words then add a word from the second half to the first
+            //I was going to put this in getFirstHalf() but you need the second half to do
+            //this properly and it's all very sad
+            
             if (countSpaces(firstHalf) < 3) {
                 String extraWord = "";
                 for (int i = 0; i < cans.length(); i++) {
@@ -54,7 +53,7 @@ public class ZuckTestController {
                         break; 
                     }
                 }
-                cans = cans.substring(extraWord.length()).trim(); // okay this feels cool
+                cans = cans.substring(extraWord.length()).trim(); //okay this feels cool
                 firstHalf = firstHalf + " " + extraWord;
 
             }

@@ -252,7 +252,9 @@
         }
 
         function skipQuestion() {
-            addMessage('*coward*', true);
+            const msgs = ["*coward*", "i give up", "i don't know", "skip!", "no idea", "beats me"];
+            addMessage(msgs[Math.floor(Math.random() * msgs.length)], true);
+            
             addMessage(`The answer was: "${currentAnswer}"`, false, 'error');
             answerRevealed = true;
         }

@@ -36,14 +36,17 @@ public class IsolateDialogue {
                             || line.equals(character + " (CONT'D)")) {
 
                         davidfinch.mark(10000); //mark current position
-                        String next = davidfinch.readLine().trim();
+                        String next = davidfinch.readLine();
+
                         if (next == null)
                             break;
+                        next = next.trim();
 
                         if (next.startsWith("(")) {
-                            next = davidfinch.readLine().trim();
+                            next = davidfinch.readLine();
                             if (next == null)
                                 break;
+                            next = next.trim();
                         }
 
                         //if the next line isn't something like SEAN or INT. HARVARD SQUARE
